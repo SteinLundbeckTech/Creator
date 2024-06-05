@@ -1,0 +1,89 @@
+@import "..//Shared//Function";
+@import "..//Shared//Media";
+@import "_LayoutMixin";
+
+$pre: str(getPrefix(Font));
+
+.bold {
+    font-weight: bold;
+
+    &-force {
+        font-weight: bold !important;
+    }
+}
+
+@each $fonts in getMap(FontSizes) {
+    $vals: nth($fonts, 2);
+    $nr: nth($fonts, 1);
+
+    .#{$pre}-#{$nr} {
+        @include font(map-get($vals, LG));
+
+        &-bold {
+            @include font(map-get($vals, LG), bold);
+
+            &-force {
+                @include font(map-get($vals, LG), bold, true);
+            }
+        }
+
+        &-force {
+            @include font(map-get($vals, LG, true));
+        }
+    }
+
+    .#{$pre}-#{$nr}-#{CssKW(Responsive)} {
+        @include font(map-get($vals, SM));
+
+        &-bold {
+            @include font(map-get($vals, SM), bold);
+
+            &-force {
+                @include font(map-get($vals, SM), bold, true);
+            }
+        }
+
+        &-force {
+            @include font(map-get($vals, SM, true));
+        }
+    }
+
+    @include media() {
+        .#{$pre}-#{$nr}-#{CssKW(Responsive)} {
+            @include font(map-get($vals, LG));
+
+            &-bold {
+                @include font(map-get($vals, LG), bold);
+
+                &-force {
+                    @include font(map-get($vals, LG), bold, true);
+                }
+            }
+
+            &-force {
+                @include font(map-get($vals, LG, true));
+            }
+        }
+    }
+}
+
+@each $fonts in getMap(Heads) {
+    $vals: nth($fonts, 2);
+    $tagName: nth($fonts, 1);
+    $lg: map-get($vals, LG);
+    $sm: map-get($vals, SM);
+
+    .#{str($tagName)} {
+        font-size: $lg;
+    }
+
+    .#{str($tagName)}-#{CssKW(Responsive)} {
+        font-size: $sm;
+    }
+
+    @include media() {
+        .#{str($tagName)}-#{CssKW(Responsive)} {
+            font-size: $lg;
+        }
+    }
+}

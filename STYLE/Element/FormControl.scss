@@ -1,0 +1,123 @@
+﻿@import "..\\Shared\\Function";
+@import "..\\Shared\\ColorFunction";
+
+@mixin controllBase($borderColor, $foreColor, $backColor) {
+    $padHor: 16px;
+    $padVer: 5px;
+    $mrg: 2px;
+
+    color: $foreColor;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: $padVer;
+    padding-bottom: $padVer;
+    padding-left: $padHor;
+    padding-right: $padHor;
+    border-radius: 4px;
+    border: 2px solid rgba($borderColor, 0.2);
+    background-color: $backColor;
+    transition: all 0.3s ease-in-out;
+    margin-left: $mrg;
+    margin-right: $mrg;
+
+    &:hover {
+        background-color: rgba($backColor, 0.5);
+        cursor: pointer;
+    }
+}
+
+@mixin btn($CPname, $borderColor: null) {
+    @if not ($borderColor) {
+        $borderColor: rgba(color($CPname, Third), 0.6);
+    }
+
+    @include controllBase($borderColor, color($CPname), rgba(color($CPname, Fifth), 0.2));
+
+    @if ($borderColor) {
+        border-color: $borderColor;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(color($CPname, Fifth), 0.5);
+    }
+}
+
+@mixin txt($CPname, $theme: Dark) {
+    $fore: color($CPname);
+    $back: rgba(color($CPname, Fifth), 0.2);
+
+    @if (str($theme) == light) {
+        $fore: color($CPname, Fourth);
+        $back: rgba(color($CPname, Fifth), 0.2);
+    }
+
+    @include controllBase($fore, $fore, $back);
+
+    &:focus {
+        background-color: white;
+        border: 2px solid rgba($fore, 0.8);
+    }
+}
+
+@mixin txtLite($includeFocus: true, $borderColor: #8a8a8a, $foreColor: black) {
+    border-left: 2px solid $borderColor;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid $borderColor;
+    border-color: $borderColor;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    min-width: 234px;
+    color: $foreColor;
+    height: 23px;
+    margin-right: 8px;
+
+    @if ($includeFocus) {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@each $name, $map in getMap(CP) {
+    .#{CssKW(TextBox)}-#{str($name)} {
+        @include txt($name);
+
+        &-light {
+            @include txt($name, Light);
+        }
+
+        &-lite {
+            @include txtLite(true, color($name, Second));
+
+            &:hover {
+                border-color: color($name, Second);
+            }
+
+            &-light {
+                @include txtLite(true, color($name, Fourth), color($name, Second));
+
+                &:hover {
+                    border-color: color($name, Second);
+                }
+            }
+        }
+    }
+
+    .#{CssKW(Button)}-#{str($name)} {
+        @include btn($name);
+
+        &-gradient {
+            @include btn($name, rgba(color($name, Fourth), 0.4));
+            background: linear-gradient(rgba(color($name, Fifth), 0.3) 0%, rgba(color($name, Fourth), 0.6) 100%);
+            border-color: rgba(color($name), 0.4);
+
+            &:hover {
+                background: linear-gradient(rgba(color($name, Fifth), 0.4) 0%, rgba(color($name, Fourth), 0.8) 100%);
+            }
+        }
+    }
+}

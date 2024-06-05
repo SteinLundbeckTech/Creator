@@ -1,0 +1,37 @@
+﻿@import "..\\Shared\\Function";
+@import "..\\Shared\\Media";
+
+$rowPre: str(getMap(StylePrefix, MediaRow));
+$colPre: str(getMap(StylePrefix, MediaColumn));
+$cols: sys(CommonCount);
+
+.#{$rowPre} {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: auto;
+
+    & > div[class^="col-"] {
+        grid-row: auto;
+        grid-column: 1/-1;
+    }
+
+    @each $size in sys(Sizes) {
+        @if not ($size == XS) {
+            @include media($size) {
+                @for $count from 1 through $cols {
+                    @for $countTwo from 1 through $cols {
+                        & > #{$colPre}-#{str($size)}-#{$countTwo} {
+                            grid-column: auto / span $countTwo;
+                            grid-row: auto;
+                        }
+
+                        & > #{$colPre}-#{str($size)}-#{$count}-#{$countTwo} {
+                            grid-column: $count / span $countTwo;
+                            grid-row: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿table.default {
+    & td {
+        padding: 3px;
+
+        &:first-child {
+            width: 260px;
+        }
+    }
+
+    & > tr:nth-child(even) {
+        background-color: #c9e6f7;
+    }
+}
