@@ -1,9 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>creator-logo.ico</ApplicationIcon>
+    <Title>Creator framework</Title>
+    <Company>SL Tech</Company>
+    <Copyright>2024 Stein Lundbeck</Copyright>
+    <PackageProjectUrl>https://creator.sltech.no</PackageProjectUrl>
+    <PackageIcon>creator-logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/SteinLundbeckTech/Creator</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="creator-logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="creator-logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
