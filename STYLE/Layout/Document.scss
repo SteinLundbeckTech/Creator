@@ -28,6 +28,11 @@ $footerHeight: 4rem;
                     height: $footerHeight;
                 }
             } 
+
+            & hr {
+                opacity: 0.4;
+                width: 87%;
+            }
         }
     }
 }
