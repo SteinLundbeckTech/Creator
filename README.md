@@ -8,4 +8,6 @@
 
 ### [Tech blog](https://blog.sltech.no)
 
-#### New website and documentation coming soon!
+---
+
+*New website and documentation coming soon!*
