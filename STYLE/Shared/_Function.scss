@@ -109,10 +109,13 @@ $enumerableProtectedWords: (First, Middle, Last);
 }
 
 @function str($str, $cmd: Lower) {
-    $commands: ( to-upper, upper, up, u, to-lower, lower, low, lw, l, camel, to-string, string, str, to-number, number, numeric, nr, qoute, qt, unqoute, uqt, list );
+    $commands: ( to-upper, upper, up, u, to-lower, lower, low, lw, l, camel, to-string, string, str, to-number, number, numeric, nr, qoute, qt, unqoute, uqt, list, length );
     $result: null;
 
-    @if (equal($cmd, to-upper, Upper, Up, U)) {
+    @if (equal($cmd, length)) {
+        $result: str-length($str);
+    }
+    @else if (equal($cmd, to-upper, Upper, Up, U)) {
         $result: to-upper-case(inspect($str));
     }
     @else if (equal($cmd, to-lower, Lower, Low, Lw, L)) {

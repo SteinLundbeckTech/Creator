@@ -29,12 +29,22 @@
     visibility: hidden !important;
   }
 }
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .media-device-phone-tablet {
     display: block;
     visibility: visible;
   }
   .media-device-phone-tablet-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .media-device-phone-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-phone-laptop-inline {
     display: inline-block;
     visibility: visible;
   }
@@ -59,7 +69,7 @@
     visibility: visible;
   }
 }
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .media-device-tablet {
     display: block;
     visibility: visible;
@@ -85,6 +95,16 @@
     visibility: hidden !important;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  .media-device-tablet-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-tablet-laptop-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
 @media (min-width: 576px) and (max-width: 1200px) {
   .media-device-tablet-computer {
     display: block;
@@ -101,6 +121,52 @@
     visibility: visible;
   }
   .media-device-tablet-screen-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .media-device-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-force {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .media-device-laptop-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+  .media-device-laptop-inline-force {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+  .media-device-laptop-hide {
+    display: none;
+    visibility: hidden;
+  }
+  .media-device-laptop-hide-force {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .media-device-laptop-computer {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-computer-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .media-device-laptop-screen {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-screen-inline {
     display: inline-block;
     visibility: visible;
   }

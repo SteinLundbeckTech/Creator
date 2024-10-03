@@ -22249,6 +22249,172 @@ table.default > tr:nth-child(even) {
   color: #9fcef6;
 }
 
+.color-default {
+  color: black;
+}
+.color-default-second {
+  color: #303030;
+}
+.color-default-third {
+  color: #484848;
+}
+.color-default-fourth {
+  color: #a1a1a1;
+}
+.color-default-fifth {
+  color: #ececec;
+}
+.color-primary {
+  color: #8b480e;
+}
+.color-primary-second {
+  color: #b06c31;
+}
+.color-primary-third {
+  color: #cc8c55;
+}
+.color-primary-fourth {
+  color: #d8a77d;
+}
+.color-primary-fifth {
+  color: #efdbc9;
+}
+.color-success {
+  color: #195f34;
+}
+.color-success-second {
+  color: #238649;
+}
+.color-success-third {
+  color: #2eac5e;
+}
+.color-success-fourth {
+  color: #4bcc7c;
+}
+.color-success-fifth {
+  color: #a0edbd;
+}
+.color-danger {
+  color: #8c101b;
+}
+.color-danger-second {
+  color: #a12d37;
+}
+.color-danger-third {
+  color: #ca5660;
+}
+.color-danger-fourth {
+  color: #ed7781;
+}
+.color-danger-fifth {
+  color: #ffcacf;
+}
+.color-warning {
+  color: #ffbf00;
+}
+.color-warning-second {
+  color: #ffd24a;
+}
+.color-warning-third {
+  color: #ffde7b;
+}
+.color-warning-fourth {
+  color: #ffe9a6;
+}
+.color-warning-fifth {
+  color: #fff2cb;
+}
+.color-info {
+  color: #2894aa;
+}
+.color-info-second {
+  color: #46a3b6;
+}
+.color-info-third {
+  color: #68b7c7;
+}
+.color-info-fourth {
+  color: #8bc8d4;
+}
+.color-info-fifth {
+  color: #c4e7ee;
+}
+.color-light {
+  color: #a19b9b;
+}
+.color-light-second {
+  color: #bbb3b3;
+}
+.color-light-third {
+  color: #dbd4d4;
+}
+.color-light-fourth {
+  color: #eae2e2;
+}
+.color-light-fifth {
+  color: #f7f2f2;
+}
+.color-dark {
+  color: #161616;
+}
+.color-dark-second {
+  color: #2c2c2c;
+}
+.color-dark-third {
+  color: #3c3c3c;
+}
+.color-dark-fourth {
+  color: #606060;
+}
+.color-dark-fifth {
+  color: #c3c3c3;
+}
+.color-antan {
+  color: #fe2f00;
+}
+.color-antan-second {
+  color: #c44b30;
+}
+.color-antan-third {
+  color: #c66b57;
+}
+.color-antan-fourth {
+  color: #a76e62;
+}
+.color-antan-fifth {
+  color: #e8bdb4;
+}
+.color-notify {
+  color: #07294e;
+}
+.color-notify-second {
+  color: #1c436d;
+}
+.color-notify-third {
+  color: #466a92;
+}
+.color-notify-fourth {
+  color: #7b9abd;
+}
+.color-notify-fifth {
+  color: #c1cfde;
+}
+.color-funk {
+  color: #165992;
+}
+.color-funk-second {
+  color: #1976c5;
+}
+.color-funk-third {
+  color: #1e92f4;
+}
+.color-funk-fourth {
+  color: #61b2f7;
+}
+.color-funk-fifth {
+  color: #9fcef6;
+}
+
 .color-bg-default {
   background-color: black;
 }
@@ -24775,12 +24941,22 @@ html.creator-full > body hr {
     visibility: hidden !important;
   }
 }
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .media-device-phone-tablet {
     display: block;
     visibility: visible;
   }
   .media-device-phone-tablet-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .media-device-phone-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-phone-laptop-inline {
     display: inline-block;
     visibility: visible;
   }
@@ -24805,7 +24981,7 @@ html.creator-full > body hr {
     visibility: visible;
   }
 }
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .media-device-tablet {
     display: block;
     visibility: visible;
@@ -24831,6 +25007,16 @@ html.creator-full > body hr {
     visibility: hidden !important;
   }
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  .media-device-tablet-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-tablet-laptop-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
 @media (min-width: 576px) and (max-width: 1200px) {
   .media-device-tablet-computer {
     display: block;
@@ -24847,6 +25033,52 @@ html.creator-full > body hr {
     visibility: visible;
   }
   .media-device-tablet-screen-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .media-device-laptop {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-force {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .media-device-laptop-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+  .media-device-laptop-inline-force {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+  .media-device-laptop-hide {
+    display: none;
+    visibility: hidden;
+  }
+  .media-device-laptop-hide-force {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .media-device-laptop-computer {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-computer-inline {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .media-device-laptop-screen {
+    display: block;
+    visibility: visible;
+  }
+  .media-device-laptop-screen-inline {
     display: inline-block;
     visibility: visible;
   }
@@ -35422,303 +35654,6 @@ h6.slim {
   font-size: 40px;
 }
 
-#creatorBarsMenu {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: black;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu:hover::before {
-  cursor: pointer;
-  color: #0a6ab0;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-default {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-default::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: black;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-default:hover::before {
-  cursor: pointer;
-  color: #a1a1a1;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-primary {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-primary::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #8b480e;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-primary:hover::before {
-  cursor: pointer;
-  color: #d8a77d;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-success {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-success::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #195f34;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-success:hover::before {
-  cursor: pointer;
-  color: #4bcc7c;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-danger {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-danger::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #8c101b;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-danger:hover::before {
-  cursor: pointer;
-  color: #ed7781;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-warning {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-warning::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #ffbf00;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-warning:hover::before {
-  cursor: pointer;
-  color: #ffe9a6;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-info {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-info::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #2894aa;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-info:hover::before {
-  cursor: pointer;
-  color: #8bc8d4;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-light {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-light::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #a19b9b;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-light:hover::before {
-  cursor: pointer;
-  color: #eae2e2;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-dark {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-dark::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #161616;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-dark:hover::before {
-  cursor: pointer;
-  color: #606060;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-antan {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-antan::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #fe2f00;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-antan:hover::before {
-  cursor: pointer;
-  color: #a76e62;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-notify {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-notify::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #07294e;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-notify:hover::before {
-  cursor: pointer;
-  color: #7b9abd;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsMenu.cp-funk {
-  display: none;
-  visibility: hidden;
-  z-index: 70;
-}
-#creatorBarsMenu.cp-funk::before {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #165992;
-  content: "|||";
-  transform: rotate(90deg);
-  transition: all 0.4ms ease-in-out;
-}
-#creatorBarsMenu.cp-funk:hover::before {
-  cursor: pointer;
-  color: #61b2f7;
-}
-#creatorBarsMenu > nav > .item {
-  grid-column-start: 2;
-}
-
-#creatorBarsBackground {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  align-items: center;
-  justify-content: center;
-  visibility: visible;
-  z-index: 60;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-#closeMenuIcon {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-}
-#closeMenuIcon::before {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: #1986d5;
-  content: "X";
-}
-#closeMenuIcon:hover::before {
-  cursor: pointer;
-  color: #0d4b78;
-}
-
 .creator.checkbox-wrap {
   display: inline-block;
 }
@@ -35904,477 +35839,455 @@ h6.slim {
   font-size: 0.9rem;
 }
 
-div.checkslider-default > label.switch {
+div.creator-slider.style-default > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-default > label.switch > .switch input {
+div.creator-slider.style-default > label.switch input {
   display: none;
 }
-div.checkslider-default > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-default > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-default > label.switch > .slider:before {
+div.creator-slider.style-default > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-default > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-default > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-default > label.switch > input:checked + .slider {
   background-color: #303030;
-  border: 2px solid black;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-default > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-default > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-default > label.switch > input:checked + .slider {
-  background-color: #a1a1a1;
-}
-div.checkslider-default > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-default > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-primary > label.switch {
+div.creator-slider.style-primary > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-primary > label.switch > .switch input {
+div.creator-slider.style-primary > label.switch input {
   display: none;
 }
-div.checkslider-primary > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-primary > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-primary > label.switch > .slider:before {
+div.creator-slider.style-primary > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-primary > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-primary > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-primary > label.switch > input:checked + .slider {
   background-color: #b06c31;
-  border: 2px solid #8b480e;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-primary > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-primary > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-primary > label.switch > input:checked + .slider {
-  background-color: #d8a77d;
-}
-div.checkslider-primary > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-primary > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-success > label.switch {
+div.creator-slider.style-success > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-success > label.switch > .switch input {
+div.creator-slider.style-success > label.switch input {
   display: none;
 }
-div.checkslider-success > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-success > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-success > label.switch > .slider:before {
+div.creator-slider.style-success > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-success > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-success > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-success > label.switch > input:checked + .slider {
   background-color: #238649;
-  border: 2px solid #195f34;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-success > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-success > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-success > label.switch > input:checked + .slider {
-  background-color: #4bcc7c;
-}
-div.checkslider-success > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-success > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-danger > label.switch {
+div.creator-slider.style-danger > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-danger > label.switch > .switch input {
+div.creator-slider.style-danger > label.switch input {
   display: none;
 }
-div.checkslider-danger > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-danger > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-danger > label.switch > .slider:before {
+div.creator-slider.style-danger > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-danger > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-danger > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-danger > label.switch > input:checked + .slider {
   background-color: #a12d37;
-  border: 2px solid #8c101b;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-danger > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-danger > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-danger > label.switch > input:checked + .slider {
-  background-color: #ed7781;
-}
-div.checkslider-danger > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-danger > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-warning > label.switch {
+div.creator-slider.style-warning > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-warning > label.switch > .switch input {
+div.creator-slider.style-warning > label.switch input {
   display: none;
 }
-div.checkslider-warning > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-warning > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-warning > label.switch > .slider:before {
+div.creator-slider.style-warning > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-warning > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-warning > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-warning > label.switch > input:checked + .slider {
   background-color: #ffd24a;
-  border: 2px solid #ffbf00;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-warning > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-warning > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-warning > label.switch > input:checked + .slider {
-  background-color: #ffe9a6;
-}
-div.checkslider-warning > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-warning > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-info > label.switch {
+div.creator-slider.style-info > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-info > label.switch > .switch input {
+div.creator-slider.style-info > label.switch input {
   display: none;
 }
-div.checkslider-info > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-info > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-info > label.switch > .slider:before {
+div.creator-slider.style-info > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-info > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-info > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-info > label.switch > input:checked + .slider {
   background-color: #46a3b6;
-  border: 2px solid #2894aa;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-info > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-info > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-info > label.switch > input:checked + .slider {
-  background-color: #8bc8d4;
-}
-div.checkslider-info > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-info > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-light > label.switch {
+div.creator-slider.style-light > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-light > label.switch > .switch input {
+div.creator-slider.style-light > label.switch input {
   display: none;
 }
-div.checkslider-light > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-light > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-light > label.switch > .slider:before {
+div.creator-slider.style-light > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-light > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-light > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-light > label.switch > input:checked + .slider {
   background-color: #bbb3b3;
-  border: 2px solid #a19b9b;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-light > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-light > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-light > label.switch > input:checked + .slider {
-  background-color: #eae2e2;
-}
-div.checkslider-light > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-light > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-dark > label.switch {
+div.creator-slider.style-dark > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-dark > label.switch > .switch input {
+div.creator-slider.style-dark > label.switch input {
   display: none;
 }
-div.checkslider-dark > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-dark > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-dark > label.switch > .slider:before {
+div.creator-slider.style-dark > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-dark > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-dark > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-dark > label.switch > input:checked + .slider {
   background-color: #2c2c2c;
-  border: 2px solid #161616;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-dark > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-dark > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-dark > label.switch > input:checked + .slider {
-  background-color: #606060;
-}
-div.checkslider-dark > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-dark > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-antan > label.switch {
+div.creator-slider.style-antan > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-antan > label.switch > .switch input {
+div.creator-slider.style-antan > label.switch input {
   display: none;
 }
-div.checkslider-antan > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-antan > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-antan > label.switch > .slider:before {
+div.creator-slider.style-antan > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-antan > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-antan > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-antan > label.switch > input:checked + .slider {
   background-color: #c44b30;
-  border: 2px solid #fe2f00;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-antan > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-antan > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-antan > label.switch > input:checked + .slider {
-  background-color: #a76e62;
-}
-div.checkslider-antan > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-antan > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-notify > label.switch {
+div.creator-slider.style-notify > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-notify > label.switch > .switch input {
+div.creator-slider.style-notify > label.switch input {
   display: none;
 }
-div.checkslider-notify > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-notify > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-notify > label.switch > .slider:before {
+div.creator-slider.style-notify > label.switch > div.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+div.creator-slider.style-notify > label.switch > div.slider.round {
+  border-radius: 34px;
+}
+div.creator-slider.style-notify > label.switch > div.slider.round:before {
+  border-radius: 50%;
+}
+div.creator-slider.style-notify > label.switch > input:checked + .slider {
   background-color: #1c436d;
-  border: 2px solid #07294e;
-  bottom: 4px;
-  content: "";
-  height: 18px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 18px;
 }
-div.checkslider-notify > label.switch > .slider.round {
-  border-radius: 18px;
-}
-div.checkslider-notify > label.switch > .slider.round:before {
-  border-radius: 50%;
-}
-div.checkslider-notify > label.switch > input:checked + .slider {
-  background-color: #7b9abd;
-}
-div.checkslider-notify > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-notify > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
-div.checkslider-funk > label.switch {
+div.creator-slider.style-funk > label.switch {
   display: inline-block;
-  height: 26px;
-  position: relative;
-  width: 48px;
+  height: 34px;
+  position: absolute;
+  width: 60px;
 }
-div.checkslider-funk > label.switch > .switch input {
+div.creator-slider.style-funk > label.switch input {
   display: none;
 }
-div.checkslider-funk > label.switch > .slider {
-  background-color: #fff;
+div.creator-slider.style-funk > label.switch > div.slider {
+  background-color: #ccc;
   bottom: 0;
   cursor: pointer;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   transition: 0.4s;
 }
-div.checkslider-funk > label.switch > .slider:before {
-  background-color: #1976c5;
-  border: 2px solid #165992;
+div.creator-slider.style-funk > label.switch > div.slider:before {
+  background-color: #fff;
   bottom: 4px;
   content: "";
-  height: 18px;
+  height: 26px;
   left: 4px;
   position: absolute;
   transition: 0.4s;
-  width: 18px;
+  width: 26px;
 }
-div.checkslider-funk > label.switch > .slider.round {
-  border-radius: 18px;
+div.creator-slider.style-funk > label.switch > div.slider.round {
+  border-radius: 34px;
 }
-div.checkslider-funk > label.switch > .slider.round:before {
+div.creator-slider.style-funk > label.switch > div.slider.round:before {
   border-radius: 50%;
 }
-div.checkslider-funk > label.switch > input:checked + .slider {
-  background-color: #61b2f7;
+div.creator-slider.style-funk > label.switch > input:checked + .slider {
+  background-color: #1976c5;
 }
-div.checkslider-funk > label.switch > input:checked + .slider:before {
-  transform: translateX(22px);
+div.creator-slider.style-funk > label.switch > input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 [class^=ci-icon-], [class*=" ci-icon-"] {
@@ -38899,4 +38812,23 @@ div.checkslider-funk > label.switch > input:checked + .slider:before {
 
 .creator-icon.material-symbols-outlined {
   font-size: 30px;
+}
+
+div.creator-password-wrap > input {
+  width: 190px;
+  margin-right: 14px;
+}
+div.creator-password-wrap > i.icon.eye {
+  font-size: 15px;
+  font-weight: bold;
+}
+div.creator-password-wrap > i.icon.eye:hover {
+  cursor: pointer;
+}
+
+div.creator-pin-wrap > input.pin-val {
+  width: 32px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }

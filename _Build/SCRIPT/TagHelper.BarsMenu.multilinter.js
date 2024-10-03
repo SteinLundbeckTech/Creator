@@ -34,4 +34,4 @@ function closeMenu() {
     }
 }
 
-	//# sourceMappingUrl=TagHelper.BarsMenu.js.map
+	//# sourceMappingUrl=TagHelper.BarsMenu.multilinter.js.map

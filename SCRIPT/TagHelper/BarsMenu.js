@@ -1,29 +1,42 @@
 ﻿/*
-    @Author     Stein Lundbeck
-    @Date       29.08.2020
- */
+    @date               : 23.09.2024
+    @author             : Stein Lundbeck
+    @description        : null
+    @latest             : 23.09.2024
+*/
 
-get("Id", "creatorBarsMenu").onclick((e) => {
-    let bg = document.createElement("div");
-    let closeIcon = document.createElement("i");
-    closeIcon.id = "closeMenuIcon";
-    bg.id = "barsMenuBackground";
+const menu = document.getElementById("creatorBarsMenu");
 
-    bg.appendChild(closeIcon);
-    document.body.appendChild(bg);
-    bg.classList.add("fade-in");
-});
+if (menu) {
+    menu.addEventListener("click", e => {
+        let bg = document.createElement("div");
+        let closeIcon = document.createElement("i");
+        closeIcon.id = "closeMenuIcon";
+        bg.id = "barsMenuBackground";
 
-get("Id", "#burgerMenuBackground").onclick((e) => {
-    closeMenu();
-});
+        bg.appendChild(closeIcon);
+        document.body.appendChild(bg);
+        bg.classList.add("fade-in");
+    });
+}
 
-document.body.onclick((e) => {
+const burgerBG = document.getElementById("burgerMenuBackground");
+
+if (burgerBG) {
+    burgerBG.addEventListener("click", e => {
+        closeMenu();
+    });
+}
+
+document.body.addEventListener("click", e => {
     closeMenu();
 });
 
 function closeMenu() {
-    let bg = get("Id", "burgerMenuBackground");
-    bg.classList.add("fade-out");
-    document.body.removeChild(bg);
+    let bg = document.getElementById("burgerMenuBackground");
+
+    if (bg) {
+        bg.classList.add("fade-out");
+        document.body.removeChild(bg);
+    }
 }

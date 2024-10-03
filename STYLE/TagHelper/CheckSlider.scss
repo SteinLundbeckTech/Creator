@@ -1,55 +1,54 @@
 ﻿@import "..//Shared//ColorFunction";
+@import "..//Shared//Function";
 
 @mixin getCheckSliderElement($colorProfileName) {
-    div.checkslider-#{to-lower-case($colorProfileName)} {
-        & > label.switch {
-            display: inline-block;
-            height: 26px;
-            position: relative;
-            width: 48px;
-
-            & > .switch input {
-                display: none;
-            }
-
-            & > .slider {
-                background-color: #fff;
-                bottom: 0;
-                cursor: pointer;
-                left: 0;
+    div.creator-slider {
+        &.style-#{str($colorProfileName)} {
+            & > label.switch {
+                display: inline-block;
+                height: 34px;
                 position: absolute;
-                right: 0;
-                top: 0;
-                transition: .4s;
+                width: 60px;
 
-                &:before {
-                    background-color: color($colorProfileName, Second);
-                    border: 2px solid color($colorProfileName, Primary);
-                    bottom: 4px;
-                    content: "";
-                    height: 18px;
-                    left: 4px;
-                    position: absolute;
-                    transition: .4s;
-                    width: 18px;
+                & input {
+                    display: none;
                 }
 
-                &.round {
-                    border-radius: 18px;
+                & > div.slider {
+                    background-color: #ccc;
+                    bottom: 0;
+                    cursor: pointer;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    transition: .4s;
 
                     &:before {
-                        border-radius: 50%;
+                        background-color: #fff;
+                        bottom: 4px;
+                        content: "";
+                        height: 26px;
+                        left: 4px;
+                        position: absolute;
+                        transition: .4s;
+                        width: 26px;
+                    }
+
+                    &.round {
+                        border-radius: 34px;
+
+                        &:before {
+                            border-radius: 50%;
+                        }
                     }
                 }
-            }
 
-            & > input {
-                &:checked + .slider {
-                    background-color: color($colorProfileName, Fourth);
+                & > input:checked + .slider {
+                    background-color: color($colorProfileName, Second);
                 }
 
-                &:checked + .slider:before {
-                    transform: translateX(22px);
+                & > input:checked + .slider:before {
+                    transform: translateX(26px);
                 }
             }
         }

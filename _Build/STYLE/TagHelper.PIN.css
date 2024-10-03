@@ -1,0 +1,6 @@
+div.creator-pin-wrap > input.pin-val {
+  width: 32px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
