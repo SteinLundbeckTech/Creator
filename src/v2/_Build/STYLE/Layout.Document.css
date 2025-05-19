@@ -5,6 +5,8 @@ html.creator-mini {
 html.creator-mini > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mini > body > .main-content {
   position: relative;
@@ -46,6 +48,8 @@ html.creator-mini-big {
 html.creator-mini-big > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mini-big > body > .main-content {
   position: relative;
@@ -87,6 +91,8 @@ html.creator-mini-xl {
 html.creator-mini-xl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mini-xl > body > .main-content {
   position: relative;
@@ -128,6 +134,8 @@ html.creator-mini-xxl {
 html.creator-mini-xxl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mini-xxl > body > .main-content {
   position: relative;
@@ -169,6 +177,8 @@ html.creator-mediun {
 html.creator-mediun > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mediun > body > .main-content {
   position: relative;
@@ -210,6 +220,8 @@ html.creator-mediun-big {
 html.creator-mediun-big > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mediun-big > body > .main-content {
   position: relative;
@@ -251,6 +263,8 @@ html.creator-mediun-xl {
 html.creator-mediun-xl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mediun-xl > body > .main-content {
   position: relative;
@@ -292,6 +306,8 @@ html.creator-mediun-xxl {
 html.creator-mediun-xxl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-mediun-xxl > body > .main-content {
   position: relative;
@@ -333,6 +349,8 @@ html.creator-large {
 html.creator-large > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-large > body > .main-content {
   position: relative;
@@ -374,6 +392,8 @@ html.creator-large-big {
 html.creator-large-big > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-large-big > body > .main-content {
   position: relative;
@@ -415,6 +435,8 @@ html.creator-large-xl {
 html.creator-large-xl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-large-xl > body > .main-content {
   position: relative;
@@ -456,6 +478,8 @@ html.creator-large-xxl {
 html.creator-large-xxl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-large-xxl > body > .main-content {
   position: relative;
@@ -497,6 +521,8 @@ html.creator {
 html.creator > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator > body > .main-content {
   position: relative;
@@ -538,6 +564,8 @@ html.creator-big {
 html.creator-big > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-big > body > .main-content {
   position: relative;
@@ -579,6 +607,8 @@ html.creator-xl {
 html.creator-xl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-xl > body > .main-content {
   position: relative;
@@ -620,6 +650,8 @@ html.creator-xxl {
 html.creator-xxl > body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html.creator-xxl > body > .main-content {
   position: relative;
@@ -652,4 +684,47 @@ html.creator-xxl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg.min.jpg");
+}
+
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg.min.jpg");
+}
+
+.bg-cover-png {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg.min.png");
+}
+
+.bg-contain-png {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg.min.png");
+}
+
+@media (min-width: 768px) {
+  .bg-cover,
+  .bg-contain {
+    background-image: url("/IMAGE/main-bg.jpg");
+  }
+  .bg-cover-png,
+  .bg-contain-png {
+    background-image: url("/IMAGE/main-bg.png");
+  }
 }

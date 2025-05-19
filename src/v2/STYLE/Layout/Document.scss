@@ -1,3 +1,6 @@
+@use "..//Shared//Media" as media;
+@use "sass:string" as string;
+
 $docSizes: (
     mini: 1024px,
     mediun: 1440px,
@@ -12,28 +15,56 @@ $footerSizes: (
     xxl: 6rem
 );
 
+@mixin bg($imgType: jpg, $size: cover, $imageName: null) {
+    $name: bg-cover;
+
+    @if ($size == contain) {
+        $name: bg-contain;
+    }
+
+    @if ($imgType == png) {
+        $name: $name + "-png";
+    }
+
+    .#{$name} {
+        background-size: $size;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+
+        @if ($imageName ==null) {
+            background-image: #{url("/IMAGE/main-bg.min." + $imgType)};
+        }
+
+        @else {
+            background-image: #{url($imageName)};
+        }
+    }
+}
+
 @each $docName, $docSize in $docSizes {
     @each $footerName, $footerSize in $footerSizes {
         $creatorName: "creator";
 
-        @if not ($docName == "full")
-        {
+        @if not ($docName =="full") {
             $creatorName: #{$creatorName}-#{$docName};
         }
 
-        @if not ($footerName == "normal") {
+        @if not ($footerName =="normal") {
             $creatorName: #{$creatorName}-#{$footerName};
         }
 
-        html.#{$creatorName}{
+        html.#{$creatorName} {
             box-sizing: border-box;
             font-size: 16px;
 
-            & > body {
+            &>body {
                 margin: 0px;
                 padding: 0px;
+                min-height: 100vh;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-                & > .main-content {
+                &>.main-content {
                     position: relative;
                     min-height: 100vh;
                     width: 100%;
@@ -41,11 +72,11 @@ $footerSizes: (
                     margin-left: auto;
                     margin-right: auto;
 
-                    & > .content-wrap {
+                    &>.content-wrap {
                         padding-bottom: $footerSize;
                     }
 
-                    & > footer {
+                    &>footer {
                         position: absolute;
                         bottom: #{"-" + $footerSize};
                         font-size: 0.7rem;
@@ -57,7 +88,7 @@ $footerSizes: (
                             text-align: center;
                         }
 
-                        & > span.separator {
+                        &>span.separator {
                             $mrg: 8px;
 
                             font-size: 0.8rem;
@@ -65,7 +96,7 @@ $footerSizes: (
                             margin-right: $mrg;
                         }
 
-                        & > div.flex {
+                        &>div.flex {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -73,6 +104,22 @@ $footerSizes: (
                     }
                 }
             }
+        }
+    }
+}
+
+@include bg(jpg, cover);
+@include bg(jpg, contain);
+@include bg(png, cover);
+@include bg(png, contain);
+
+@include media.media() {
+    .bg-cover,
+    .bg-contain {
+        background-image: url("/IMAGE/main-bg.jpg");
+
+        &-png {
+            background-image: url("/IMAGE/main-bg.png");
         }
     }
 }

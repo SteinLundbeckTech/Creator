@@ -1,4 +1,4 @@
-@mixin wrap($location: left) {
+@mixin wrap($location: right) {
     margin: 19px;
     display: flex;
     
@@ -12,13 +12,14 @@
     &.burger-icon {
         &:hover {
             cursor: pointer;
+            opacity: 0.8;
         }
     }
 }
 
 .burger-wrap {
-    @include wrap(left);
-}
-.burger-wrap-right {
     @include wrap(right);
+}
+.burger-wrap-left {
+    @include wrap(left);
 }
