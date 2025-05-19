@@ -1,0 +1,31 @@
+@use "sass:string" as string;
+@use "sass:map" as map;
+@use "..//Shared//Colors" as colors;
+
+@each $name, $colors in colors.$colors {
+    $id: "btn-#{string.to-lower-case($name)}";
+
+    button.#{$id},
+    input[type=button].#{$id},
+    input[type=submit].#{$id},
+    input[type=reset].#{$id} {
+        background-color: map.get($colors, Fourth);
+        color: map.get($colors, Primary);
+        border: 1px solid map.get($colors, Primary);
+        border-radius: 3px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0.5rem 0.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: map.get($colors, Third);
+            border: 2px solid map.get($colors, Primary);
+            color: map.get($colors, Fifth);
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "sass:string" as string;
+@use "sass:map" as map;
+@use "..//Shared//Colors" as colors;
+
+@each $name, $colors in colors.$colors {
+    .#{string.to-lower-case($name)} {
+        color: map.get($colors, Primary);
+
+        &-light {
+            color: map.get($colors, Third);
+        }
+    }
+}

@@ -71,6 +71,7 @@ $footerSizes: (
                     max-width: $docSize;
                     margin-left: auto;
                     margin-right: auto;
+                    padding: 12px;
 
                     &>.content-wrap {
                         padding-bottom: $footerSize;

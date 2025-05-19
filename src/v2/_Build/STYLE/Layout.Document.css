@@ -15,6 +15,7 @@ html.creator-mini > body > .main-content {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mini > body > .main-content > .content-wrap {
   padding-bottom: 2.5rem;
@@ -58,6 +59,7 @@ html.creator-mini-big > body > .main-content {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mini-big > body > .main-content > .content-wrap {
   padding-bottom: 3rem;
@@ -101,6 +103,7 @@ html.creator-mini-xl > body > .main-content {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mini-xl > body > .main-content > .content-wrap {
   padding-bottom: 4.2rem;
@@ -144,6 +147,7 @@ html.creator-mini-xxl > body > .main-content {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mini-xxl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
@@ -187,6 +191,7 @@ html.creator-mediun > body > .main-content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mediun > body > .main-content > .content-wrap {
   padding-bottom: 2.5rem;
@@ -230,6 +235,7 @@ html.creator-mediun-big > body > .main-content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mediun-big > body > .main-content > .content-wrap {
   padding-bottom: 3rem;
@@ -273,6 +279,7 @@ html.creator-mediun-xl > body > .main-content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mediun-xl > body > .main-content > .content-wrap {
   padding-bottom: 4.2rem;
@@ -316,6 +323,7 @@ html.creator-mediun-xxl > body > .main-content {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-mediun-xxl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
@@ -359,6 +367,7 @@ html.creator-large > body > .main-content {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-large > body > .main-content > .content-wrap {
   padding-bottom: 2.5rem;
@@ -402,6 +411,7 @@ html.creator-large-big > body > .main-content {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-large-big > body > .main-content > .content-wrap {
   padding-bottom: 3rem;
@@ -445,6 +455,7 @@ html.creator-large-xl > body > .main-content {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-large-xl > body > .main-content > .content-wrap {
   padding-bottom: 4.2rem;
@@ -488,6 +499,7 @@ html.creator-large-xxl > body > .main-content {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-large-xxl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
@@ -531,6 +543,7 @@ html.creator > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator > body > .main-content > .content-wrap {
   padding-bottom: 2.5rem;
@@ -574,6 +587,7 @@ html.creator-big > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-big > body > .main-content > .content-wrap {
   padding-bottom: 3rem;
@@ -617,6 +631,7 @@ html.creator-xl > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-xl > body > .main-content > .content-wrap {
   padding-bottom: 4.2rem;
@@ -660,6 +675,7 @@ html.creator-xxl > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
 }
 html.creator-xxl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;

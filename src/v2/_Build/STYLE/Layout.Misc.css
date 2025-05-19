@@ -1,0 +1,74 @@
+.display-block {
+  display: "block";
+  visibility: visible;
+}
+
+.display-inline {
+  display: "inline";
+  visibility: visible;
+}
+
+.display-inline-block {
+  display: "inline-block";
+  visibility: visible;
+}
+
+.display-flex {
+  display: "flex";
+  visibility: visible;
+}
+
+.display-inline-flex {
+  display: "inline-flex";
+  visibility: visible;
+}
+
+.display-grid {
+  display: "grid";
+  visibility: visible;
+}
+
+.display-inline-grid {
+  display: "inline-grid";
+  visibility: visible;
+}
+
+.display-table {
+  display: "table";
+  visibility: visible;
+}
+
+.display-inline-table {
+  display: "inline-table";
+  visibility: visible;
+}
+
+.display-list-item {
+  display: "list-item";
+  visibility: visible;
+}
+
+.display-run-in {
+  display: "run-in";
+  visibility: visible;
+}
+
+.display-none {
+  display: "none";
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+}
+
+.show-inline {
+  display: inline-block;
+  visibility: visible;
+}

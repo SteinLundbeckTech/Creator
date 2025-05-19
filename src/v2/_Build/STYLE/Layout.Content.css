@@ -1,0 +1,48 @@
+.funk {
+  color: #165992;
+}
+.funk-light {
+  color: #1e92f4;
+}
+
+.notify {
+  color: #07294e;
+}
+.notify-light {
+  color: #466a92;
+}
+
+.antan {
+  color: #fe2f00;
+}
+.antan-light {
+  color: #c66b57;
+}
+
+.warning {
+  color: #ffbf00;
+}
+.warning-light {
+  color: #ffde7b;
+}
+
+.danger {
+  color: #8c101b;
+}
+.danger-light {
+  color: #ca5660;
+}
+
+.success {
+  color: #195f34;
+}
+.success-light {
+  color: #2eac5e;
+}
+
+.info {
+  color: #2894aa;
+}
+.info-light {
+  color: #68b7c7;
+}

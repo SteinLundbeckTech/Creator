@@ -1,0 +1,312 @@
+.mrg-sm {
+  margin: 4px;
+}
+.mrg-sm-top {
+  margin-top: 4px;
+}
+.mrg-sm-right {
+  margin-right: 4px;
+}
+.mrg-sm-bottom {
+  margin-bottom: 4px;
+}
+.mrg-sm-left {
+  margin-left: 4px;
+}
+
+.mrg-md {
+  margin: 4px;
+}
+.mrg-md-top {
+  margin-top: 4px;
+}
+.mrg-md-right {
+  margin-right: 4px;
+}
+.mrg-md-bottom {
+  margin-bottom: 4px;
+}
+.mrg-md-left {
+  margin-left: 4px;
+}
+
+.mrg-lg {
+  margin: 4px;
+}
+.mrg-lg-top {
+  margin-top: 4px;
+}
+.mrg-lg-right {
+  margin-right: 4px;
+}
+.mrg-lg-bottom {
+  margin-bottom: 4px;
+}
+.mrg-lg-left {
+  margin-left: 4px;
+}
+
+.mrg-xl {
+  margin: 4px;
+}
+.mrg-xl-top {
+  margin-top: 4px;
+}
+.mrg-xl-right {
+  margin-right: 4px;
+}
+.mrg-xl-bottom {
+  margin-bottom: 4px;
+}
+.mrg-xl-left {
+  margin-left: 4px;
+}
+
+.mrg-xxl {
+  margin: 4px;
+}
+.mrg-xxl-top {
+  margin-top: 4px;
+}
+.mrg-xxl-right {
+  margin-right: 4px;
+}
+.mrg-xxl-bottom {
+  margin-bottom: 4px;
+}
+.mrg-xxl-left {
+  margin-left: 4px;
+}
+
+.pad-sm {
+  padding: 3px;
+}
+.pad-sm-top {
+  padding-top: 3px;
+}
+.pad-sm-right {
+  padding-right: 3px;
+}
+.pad-sm-bottom {
+  padding-bottom: 3px;
+}
+.pad-sm-left {
+  padding-left: 3px;
+}
+
+.pad-md {
+  padding: 3px;
+}
+.pad-md-top {
+  padding-top: 3px;
+}
+.pad-md-right {
+  padding-right: 3px;
+}
+.pad-md-bottom {
+  padding-bottom: 3px;
+}
+.pad-md-left {
+  padding-left: 3px;
+}
+
+.pad-lg {
+  padding: 3px;
+}
+.pad-lg-top {
+  padding-top: 3px;
+}
+.pad-lg-right {
+  padding-right: 3px;
+}
+.pad-lg-bottom {
+  padding-bottom: 3px;
+}
+.pad-lg-left {
+  padding-left: 3px;
+}
+
+.pad-xl {
+  padding: 3px;
+}
+.pad-xl-top {
+  padding-top: 3px;
+}
+.pad-xl-right {
+  padding-right: 3px;
+}
+.pad-xl-bottom {
+  padding-bottom: 3px;
+}
+.pad-xl-left {
+  padding-left: 3px;
+}
+
+.pad-xxl {
+  padding: 3px;
+}
+.pad-xxl-top {
+  padding-top: 3px;
+}
+.pad-xxl-right {
+  padding-right: 3px;
+}
+.pad-xxl-bottom {
+  padding-bottom: 3px;
+}
+.pad-xxl-left {
+  padding-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .mrg-sm {
+    margin: 8px;
+  }
+  .mrg-sm-top {
+    margin-top: 8px;
+  }
+  .mrg-sm-right {
+    margin-right: 8px;
+  }
+  .mrg-sm-bottom {
+    margin-bottom: 8px;
+  }
+  .mrg-sm-left {
+    margin-left: 8px;
+  }
+  .mrg-md {
+    margin: 16px;
+  }
+  .mrg-md-top {
+    margin-top: 16px;
+  }
+  .mrg-md-right {
+    margin-right: 16px;
+  }
+  .mrg-md-bottom {
+    margin-bottom: 16px;
+  }
+  .mrg-md-left {
+    margin-left: 16px;
+  }
+  .mrg-lg {
+    margin: 24px;
+  }
+  .mrg-lg-top {
+    margin-top: 24px;
+  }
+  .mrg-lg-right {
+    margin-right: 24px;
+  }
+  .mrg-lg-bottom {
+    margin-bottom: 24px;
+  }
+  .mrg-lg-left {
+    margin-left: 24px;
+  }
+  .mrg-xl {
+    margin: 32px;
+  }
+  .mrg-xl-top {
+    margin-top: 32px;
+  }
+  .mrg-xl-right {
+    margin-right: 32px;
+  }
+  .mrg-xl-bottom {
+    margin-bottom: 32px;
+  }
+  .mrg-xl-left {
+    margin-left: 32px;
+  }
+  .mrg-xxl {
+    margin: 40px;
+  }
+  .mrg-xxl-top {
+    margin-top: 40px;
+  }
+  .mrg-xxl-right {
+    margin-right: 40px;
+  }
+  .mrg-xxl-bottom {
+    margin-bottom: 40px;
+  }
+  .mrg-xxl-left {
+    margin-left: 40px;
+  }
+  .pad-sm {
+    padding: 8px;
+  }
+  .pad-sm-top {
+    padding-top: 8px;
+  }
+  .pad-sm-right {
+    padding-right: 8px;
+  }
+  .pad-sm-bottom {
+    padding-bottom: 8px;
+  }
+  .pad-sm-left {
+    padding-left: 8px;
+  }
+  .pad-md {
+    padding: 16px;
+  }
+  .pad-md-top {
+    padding-top: 16px;
+  }
+  .pad-md-right {
+    padding-right: 16px;
+  }
+  .pad-md-bottom {
+    padding-bottom: 16px;
+  }
+  .pad-md-left {
+    padding-left: 16px;
+  }
+  .pad-lg {
+    padding: 24px;
+  }
+  .pad-lg-top {
+    padding-top: 24px;
+  }
+  .pad-lg-right {
+    padding-right: 24px;
+  }
+  .pad-lg-bottom {
+    padding-bottom: 24px;
+  }
+  .pad-lg-left {
+    padding-left: 24px;
+  }
+  .pad-xl {
+    padding: 32px;
+  }
+  .pad-xl-top {
+    padding-top: 32px;
+  }
+  .pad-xl-right {
+    padding-right: 32px;
+  }
+  .pad-xl-bottom {
+    padding-bottom: 32px;
+  }
+  .pad-xl-left {
+    padding-left: 32px;
+  }
+  .pad-xxl {
+    padding: 40px;
+  }
+  .pad-xxl-top {
+    padding-top: 40px;
+  }
+  .pad-xxl-right {
+    padding-right: 40px;
+  }
+  .pad-xxl-bottom {
+    padding-bottom: 40px;
+  }
+  .pad-xxl-left {
+    padding-left: 40px;
+  }
+}

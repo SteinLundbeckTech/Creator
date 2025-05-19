@@ -1,0 +1,181 @@
+button.btn-funk,
+input[type=button].btn-funk,
+input[type=submit].btn-funk,
+input[type=reset].btn-funk {
+  background-color: #61b2f7;
+  color: #165992;
+  border: 1px solid #165992;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-funk:hover,
+input[type=button].btn-funk:hover,
+input[type=submit].btn-funk:hover,
+input[type=reset].btn-funk:hover {
+  background-color: #1e92f4;
+  border: 2px solid #165992;
+  color: #9fcef6;
+  font-weight: bold;
+}
+
+button.btn-notify,
+input[type=button].btn-notify,
+input[type=submit].btn-notify,
+input[type=reset].btn-notify {
+  background-color: #7b9abd;
+  color: #07294e;
+  border: 1px solid #07294e;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-notify:hover,
+input[type=button].btn-notify:hover,
+input[type=submit].btn-notify:hover,
+input[type=reset].btn-notify:hover {
+  background-color: #466a92;
+  border: 2px solid #07294e;
+  color: #c1cfde;
+  font-weight: bold;
+}
+
+button.btn-antan,
+input[type=button].btn-antan,
+input[type=submit].btn-antan,
+input[type=reset].btn-antan {
+  background-color: #a76e62;
+  color: #fe2f00;
+  border: 1px solid #fe2f00;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-antan:hover,
+input[type=button].btn-antan:hover,
+input[type=submit].btn-antan:hover,
+input[type=reset].btn-antan:hover {
+  background-color: #c66b57;
+  border: 2px solid #fe2f00;
+  color: #e8bdb4;
+  font-weight: bold;
+}
+
+button.btn-warning,
+input[type=button].btn-warning,
+input[type=submit].btn-warning,
+input[type=reset].btn-warning {
+  background-color: #ffe9a6;
+  color: #ffbf00;
+  border: 1px solid #ffbf00;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-warning:hover,
+input[type=button].btn-warning:hover,
+input[type=submit].btn-warning:hover,
+input[type=reset].btn-warning:hover {
+  background-color: #ffde7b;
+  border: 2px solid #ffbf00;
+  color: #fff2cb;
+  font-weight: bold;
+}
+
+button.btn-danger,
+input[type=button].btn-danger,
+input[type=submit].btn-danger,
+input[type=reset].btn-danger {
+  background-color: #ed7781;
+  color: #8c101b;
+  border: 1px solid #8c101b;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-danger:hover,
+input[type=button].btn-danger:hover,
+input[type=submit].btn-danger:hover,
+input[type=reset].btn-danger:hover {
+  background-color: #ca5660;
+  border: 2px solid #8c101b;
+  color: #ffcacf;
+  font-weight: bold;
+}
+
+button.btn-success,
+input[type=button].btn-success,
+input[type=submit].btn-success,
+input[type=reset].btn-success {
+  background-color: #4bcc7c;
+  color: #195f34;
+  border: 1px solid #195f34;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-success:hover,
+input[type=button].btn-success:hover,
+input[type=submit].btn-success:hover,
+input[type=reset].btn-success:hover {
+  background-color: #2eac5e;
+  border: 2px solid #195f34;
+  color: #a0edbd;
+  font-weight: bold;
+}
+
+button.btn-info,
+input[type=button].btn-info,
+input[type=submit].btn-info,
+input[type=reset].btn-info {
+  background-color: #8bc8d4;
+  color: #2894aa;
+  border: 1px solid #2894aa;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease;
+}
+button.btn-info:hover,
+input[type=button].btn-info:hover,
+input[type=submit].btn-info:hover,
+input[type=reset].btn-info:hover {
+  background-color: #68b7c7;
+  border: 2px solid #2894aa;
+  color: #c4e7ee;
+  font-weight: bold;
+}

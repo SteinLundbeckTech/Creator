@@ -1,0 +1,48 @@
+@use "sass:string" as string;
+
+$displays: (
+    "block",
+    "inline",
+    "inline-block",
+    "flex",
+    "inline-flex",
+    "grid",
+    "inline-grid",
+    "table",
+    "inline-table",
+    "list-item",
+    "run-in",
+    "none"
+);
+
+@mixin display($display: block) {
+    .display-#{string.to-lower-case($display)} {
+        display: $display;
+
+        @if ($display != none) {
+            visibility: visible;
+        }
+        @else {
+            visibility: hidden;
+        }
+    }
+}
+
+@each $val in $displays {
+    @include display($val);
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+}
+
+.show-inline {
+    display: inline-block;
+    visibility: visible;
+}
