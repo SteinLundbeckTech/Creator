@@ -1,0 +1,36 @@
+﻿@import "..\\Shared\\Function";
+
+$footerHeight: 2.5rem;
+
+@each $name, $width in getMap(Doc) {
+    html.creator-#{str($name)} {
+        box-sizing: border-box;
+
+        & > body {
+            margin: 0px;
+
+            & > .page-wrap {
+                position: relative;
+                min-height: 100vh;
+                width: 100%;
+                max-width: $width;
+                margin: auto;
+
+                & > .content-wrap {
+                    padding-bottom: $footerHeight;
+                }
+
+                & > footer {
+                    position: absolute;
+                    bottom: -40px;
+                    width: 100%;
+                    height: $footerHeight;
+                }
+            }
+        }
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

@@ -1,8 +1,6 @@
 
 
-	
-
-const menu = document.getElementById("creatorBarsMenu");
+	const menu = document.getElementById("creatorBarsMenu");
 
 if (menu) {
     menu.addEventListener("click", e => {
@@ -38,9 +36,7 @@ function closeMenu() {
     }
 }
 
-	
-
-const menu = document.getElementById("creatorBarsMenu");
+	const menu = document.getElementById("creatorBarsMenu");
 
 if (menu) {
     menu.addEventListener("click", e => {
