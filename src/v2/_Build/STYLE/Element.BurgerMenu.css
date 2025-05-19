@@ -1,0 +1,17 @@
+.burger-wrap {
+  margin: 19px;
+  display: flex;
+  justify-content: flex-start;
+}
+.burger-wrap.burger-icon:hover {
+  cursor: pointer;
+}
+
+.burger-wrap-right {
+  margin: 19px;
+  display: flex;
+  justify-content: flex-end;
+}
+.burger-wrap-right.burger-icon:hover {
+  cursor: pointer;
+}

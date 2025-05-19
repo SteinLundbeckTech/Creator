@@ -1,0 +1,24 @@
+@mixin wrap($location: left) {
+    margin: 19px;
+    display: flex;
+    
+    @if ($location == left) {
+        justify-content: flex-start;
+    }
+    @else if ($location == right) {
+        justify-content: flex-end;
+    }
+
+    &.burger-icon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.burger-wrap {
+    @include wrap(left);
+}
+.burger-wrap-right {
+    @include wrap(right);
+}

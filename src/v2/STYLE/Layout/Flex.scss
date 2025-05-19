@@ -1,0 +1,86 @@
+@use "sass:string" as string;
+
+$justifys: (
+    Center: center,
+    End: flex-end,
+    Start: flex-start,
+    Stretch: stretch,
+    Between: space-between,
+    Evenly: space-evenly
+);
+
+$aligns: (
+    Base: baseline,
+    Center: center,
+    End: flex-end,
+    Start: flex-start,
+    Stretch: stretch
+);
+
+$wraps: (
+    Wrap: wrap,
+    NoWrap: nowrap,
+    Wrap-Reverse: wrap-reverse
+);
+
+@mixin flex($justName: null, $justify: null, $alignName: null, $align: null, $wrapName: null, $wrap: null, $reverse: false, $horizontal: false) {
+    $prefix: flex;
+
+    @if ($justName != null) {
+        $prefix: $prefix + "-" + #{$justName};
+    }
+
+    @if ($alignName !=null) {
+        $prefix: $prefix + "-" + #{$alignName};
+    }
+
+    @if ($wrapName !=null) {
+        $prefix: $prefix + "-" + #{$wrapName};
+    }
+
+    @if ($reverse) {
+        $prefix: $prefix + "-" + "reverse";
+    }
+
+    $prefix: string.to-lower-case($prefix);
+
+    .#{$prefix} {
+        display: flex;
+
+        @if ($justify !=null) {
+            justify-content: $justify;
+        }
+
+        @if ($align !=null) {
+            align-items: $align;
+        }
+
+        @if ($wrap !=null) {
+            flex-wrap: $wrap;
+        }
+
+        @if ($reverse) {
+            &.reverse {
+                flex-wrap: wrap-reverse;
+            }
+        }
+
+        @if ($horizontal) {
+            flex-direction: column;
+        }
+    }
+}
+
+@include flex();
+
+@each $justName, $justVal in $justifys {
+    @include flex($justName, $justVal);
+    
+    @each $alignName, $align in $aligns {
+        @include flex($justName, $justVal, $alignName, $align);
+
+        @each $wName, $w in $wraps {
+            @include flex($justName, $justVal, $alignName, $align, $wName, $w);
+        }
+    }
+}
