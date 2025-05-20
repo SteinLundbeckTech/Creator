@@ -1,0 +1,104 @@
+@use "..//Shared//Media" as media;
+@use "sass:map" as map;
+@use "sass:string" as string;
+@use "sass:list" as list;
+
+$prefix: "grid";
+$cols: 4;
+$mediaCols: 12;
+$i: 1;
+$ii: 1;
+$gaps: (
+    None: null,
+    SM: 6px,
+    MD: 10px,
+    LG: 16px,
+    XL: 22px,
+    XXL: 36px
+);
+$justifys: (
+    Start,
+    End,
+    Center,
+    Stretch
+);
+$aligns: (
+    Stretch,
+    Start,
+    End,
+    Center,
+    Baseline
+);
+
+@function styleName($rep, $mediaRep, $justify: null, $align: null, $gap: None) {
+    $result: #{$prefix}-#{$mediaRep}-#{$rep};
+
+    @if ($justify !=null) {
+        $result: #{$result}-#{$justify};
+    }
+
+    @if ($align !=null) {
+        $result: #{$result}-#{$align};
+    }
+
+    @if ($gap !=None) {
+        $result: #{$result}-#{$gap};
+    }
+
+    @return string.to-lower-case($result);
+}
+
+@mixin gridStyle($rep, $justify: null, $align: null, $isMedia: false) {
+    @if not ($isMedia) {
+        @each $gapName, $gap in $gaps {
+            .#{styleName($rep, $mediaCols, $justify, $align, $gapName)} {
+                display: grid;
+                grid-template-columns: repeat($rep, 1fr);
+                grid-template-rows: auto;
+
+                @if ($justify !=null) {
+                    justify-items: string.to-lower-case($justify);
+                }
+
+                @if ($align !=null) {
+                    align-items: string.to-lower-case($align);
+                }
+
+                @if ($gapName !=None) {
+                    grid-gap: $gap;
+                }
+            }
+        }
+    }
+    @else {
+        @include media.media() {
+            @each $gapName, $gap in $gaps {
+                .#{styleName($rep, $mediaCols, $justify, $align, $gapName)} {
+                    grid-template-columns: repeat($rep, 1fr);
+                }
+            }
+        }
+    }
+}
+
+@while $i <=$mediaCols {
+    @include gridStyle($i);
+    @include gridStyle($ii, null, null, true);
+
+    @each $justify in $justifys {
+        @include gridStyle($i, $justify);
+        @include gridStyle($ii, $justify, null, true);
+
+        @each $align in $aligns {
+            @include gridStyle($i, $justify, $align);
+            @include gridStyle($ii, $justify, $align, true);
+        }
+    }
+
+    $i: $i + 1;
+    $ii: $ii + 1;
+
+    @if ($ii > $cols) {
+        $ii: $cols;
+    }
+}
