@@ -28,4 +28,31 @@
             font-weight: bold;
         }
     }
+
+    input[type=text].#{$id},
+    input[type=password].#{$id},
+    input[type=email].#{$id},
+    input[type=number].#{$id},
+    input[type=tel].#{$id},
+    input[type=url].#{$id},
+    input[type=search].#{$id},
+    textarea.#{$id} {
+        background-color: map.get($colors, Fifth);
+        color: map.get($colors, Primary);
+        border: 2px solid map.get($colors, Second);
+        border-radius: 3px;
+        padding: 0.5rem 1rem;
+        font-size: 13px;
+        ;
+    }
+}
+
+input[type=text].pin {
+    color: rgb(4, 16, 29);
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(1, 26, 55);
+    border-radius: 3px;
+    font-size: 22px;
+    width: 10px;
+    text-align: center;
 }

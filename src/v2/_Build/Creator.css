@@ -79,6 +79,22 @@ input[type=reset].btn-funk:hover {
   font-weight: bold;
 }
 
+input[type=text].btn-funk,
+input[type=password].btn-funk,
+input[type=email].btn-funk,
+input[type=number].btn-funk,
+input[type=tel].btn-funk,
+input[type=url].btn-funk,
+input[type=search].btn-funk,
+textarea.btn-funk {
+  background-color: #9fcef6;
+  color: #165992;
+  border: 2px solid #1976c5;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
 button.btn-notify,
 input[type=button].btn-notify,
 input[type=submit].btn-notify,
@@ -103,6 +119,22 @@ input[type=reset].btn-notify:hover {
   border: 2px solid #07294e;
   color: #c1cfde;
   font-weight: bold;
+}
+
+input[type=text].btn-notify,
+input[type=password].btn-notify,
+input[type=email].btn-notify,
+input[type=number].btn-notify,
+input[type=tel].btn-notify,
+input[type=url].btn-notify,
+input[type=search].btn-notify,
+textarea.btn-notify {
+  background-color: #c1cfde;
+  color: #07294e;
+  border: 2px solid #1c436d;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
 }
 
 button.btn-antan,
@@ -131,6 +163,22 @@ input[type=reset].btn-antan:hover {
   font-weight: bold;
 }
 
+input[type=text].btn-antan,
+input[type=password].btn-antan,
+input[type=email].btn-antan,
+input[type=number].btn-antan,
+input[type=tel].btn-antan,
+input[type=url].btn-antan,
+input[type=search].btn-antan,
+textarea.btn-antan {
+  background-color: #e8bdb4;
+  color: #fe2f00;
+  border: 2px solid #c44b30;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
 button.btn-warning,
 input[type=button].btn-warning,
 input[type=submit].btn-warning,
@@ -155,6 +203,22 @@ input[type=reset].btn-warning:hover {
   border: 2px solid #ffbf00;
   color: #fff2cb;
   font-weight: bold;
+}
+
+input[type=text].btn-warning,
+input[type=password].btn-warning,
+input[type=email].btn-warning,
+input[type=number].btn-warning,
+input[type=tel].btn-warning,
+input[type=url].btn-warning,
+input[type=search].btn-warning,
+textarea.btn-warning {
+  background-color: #fff2cb;
+  color: #ffbf00;
+  border: 2px solid #ffd24a;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
 }
 
 button.btn-danger,
@@ -183,6 +247,22 @@ input[type=reset].btn-danger:hover {
   font-weight: bold;
 }
 
+input[type=text].btn-danger,
+input[type=password].btn-danger,
+input[type=email].btn-danger,
+input[type=number].btn-danger,
+input[type=tel].btn-danger,
+input[type=url].btn-danger,
+input[type=search].btn-danger,
+textarea.btn-danger {
+  background-color: #ffcacf;
+  color: #8c101b;
+  border: 2px solid #a12d37;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
 button.btn-success,
 input[type=button].btn-success,
 input[type=submit].btn-success,
@@ -209,6 +289,22 @@ input[type=reset].btn-success:hover {
   font-weight: bold;
 }
 
+input[type=text].btn-success,
+input[type=password].btn-success,
+input[type=email].btn-success,
+input[type=number].btn-success,
+input[type=tel].btn-success,
+input[type=url].btn-success,
+input[type=search].btn-success,
+textarea.btn-success {
+  background-color: #a0edbd;
+  color: #195f34;
+  border: 2px solid #238649;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
 button.btn-info,
 input[type=button].btn-info,
 input[type=submit].btn-info,
@@ -233,6 +329,32 @@ input[type=reset].btn-info:hover {
   border: 2px solid #2894aa;
   color: #c4e7ee;
   font-weight: bold;
+}
+
+input[type=text].btn-info,
+input[type=password].btn-info,
+input[type=email].btn-info,
+input[type=number].btn-info,
+input[type=tel].btn-info,
+input[type=url].btn-info,
+input[type=search].btn-info,
+textarea.btn-info {
+  background-color: #c4e7ee;
+  color: #2894aa;
+  border: 2px solid #46a3b6;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
+input[type=text].pin {
+  color: rgb(4, 16, 29);
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(1, 26, 55);
+  border-radius: 3px;
+  font-size: 22px;
+  width: 10px;
+  text-align: center;
 }.funk {
   color: #165992;
 }
@@ -2791,6 +2913,11 @@ h6-pad-mrg-r {
 
 .table-auto {
   display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mrg-auto {
   margin-left: auto;
   margin-right: auto;
 }
