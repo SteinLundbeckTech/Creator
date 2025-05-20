@@ -1,6 +1,8 @@
-@use "sass:string" as string;
+@use "sass:string" as str;
+@use "..//Shared//Media" as media;
 
 $displays: (
+    "initial",
     "block",
     "inline",
     "inline-block",
@@ -16,10 +18,16 @@ $displays: (
 );
 
 @mixin display($display: block) {
-    .display-#{string.to-lower-case($display)} {
+    $name: $display;
+
+    @if ($display ==initial) {
+        $name: "init";
+    }
+
+    .show-#{str.to-lower-case($name)} {
         display: $display;
 
-        @if ($display != none) {
+        @if ($display !=none) {
             visibility: visible;
         }
         @else {
@@ -29,7 +37,11 @@ $displays: (
 }
 
 @each $val in $displays {
-    @include display($val);
+    @if ($val !=block) {
+        @if ($val !=none) {
+            @include display($val);
+        }
+    }
 }
 
 .hide {
@@ -42,7 +54,56 @@ $displays: (
     visibility: visible;
 }
 
-.show-inline {
-    display: inline-block;
-    visibility: visible;
+[class*="show-"] {
+    display: none;
+    visibility: hidden;
+}
+
+@mixin show($size, $display) {
+    $name: $size;
+
+    @if ($display !=initial) {
+        $name: $name + "-" + $display;
+    }
+
+    @else if ($display ==initial) {
+        $name: $name + "-init";
+    }
+
+    .show-#{str.to-lower-case($name)} {
+        @if ($display !=none) and ($display !=block) {
+            display: $display;
+            visibility: visible;
+        }
+
+        @else if ($display !=none) and ($display ==block) {
+            display: block;
+            visibility: visible;
+        }
+
+        @else if ($display ==none) {
+            display: block;
+            visibility: visible;
+        }
+    }
+}
+
+@each $name, $val in media.$breakpoints {
+    @each $dis in $displays {
+        @if ($dis !=none) {
+            @include media.media($name) {
+                @include show($name, $dis);
+            }
+        }
+    }
+}
+
+@each $name, $size in media.$devices {
+    @include media.media($size) {
+        @each $dis in $displays {
+            @if ($dis !=none) {
+                @include show($name, $dis);
+            }
+        }
+    }
 }

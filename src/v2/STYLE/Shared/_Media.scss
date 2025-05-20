@@ -1,16 +1,16 @@
 ﻿@use "sass:map" as map;
-@use "sass:string" as string;
+@use "sass:string" as str;
 @use "sass:meta" as meta;
 
-$mediaDevices: ( Phone: XS, Tablet: SM, Laptop: MD, Computer: LG, Screen: XL );
-$mediaBreakpoints: ( XS: 0px, SM: 576px, MD: 768px, LG: 992px, XL: 1200px );
-$mediaOrientation: ( 0: Any, 1: Portrait, 2: Landscape );
-$mediaRetina: ( 1.25: 120dpi, 1.3: 124.8dpi, 1.5: 144dpi, 2: 192dpi );
+$devices: ( Phone: XS, Tablet: SM, Laptop: MD, Computer: LG, Screen: XL );
+$breakpoints: ( XS: 0px, SM: 576px, MD: 768px, LG: 992px, XL: 1200px );
+$orientations: ( 0: Any, 1: Portrait, 2: Landscape );
+$retinas: ( 1.25: 120dpi, 1.3: 124.8dpi, 1.5: 144dpi, 2: 192dpi );
 
 @mixin media($size: MD, $orientation: Any, $mode: Up, $minWidth: null, $maxWidth: null) {
-    $mode: string.to-upper-case(meta.inspect($mode));
-    $size: string.to-upper-case(meta.inspect($size));
-    $width: map.get($mediaBreakpoints, $size);
+    $mode: str.to-upper-case(meta.inspect($mode));
+    $size: str.to-upper-case(meta.inspect($size));
+    $width: map.get($breakpoints, $size);
     $query: null;
 
     @if ($minWidth) {
@@ -32,16 +32,16 @@ $mediaRetina: ( 1.25: 120dpi, 1.3: 124.8dpi, 1.5: 144dpi, 2: 192dpi );
         }
         @else {
             @if ($size == XS) {
-                $max: map.get($mediaBreakpoints, SM);
+                $max: map.get($breakpoints, SM);
             }
             @else if ($size == SM) {
-                $max: map.get($mediaBreakpoints, MD);
+                $max: map.get($breakpoints, MD);
             }
             @else if ($size == MD) {
-                $max: map.get($mediaBreakpoints, LG);
+                $max: map.get($breakpoints, LG);
             }
             @else if ($size == LG) {
-                $max: map.get($mediaBreakpoints, XL);
+                $max: map.get($breakpoints, XL);
             }
         }
 
@@ -51,7 +51,7 @@ $mediaRetina: ( 1.25: 120dpi, 1.3: 124.8dpi, 1.5: 144dpi, 2: 192dpi );
     }
 
     @if not ($orientation == Any) {
-        $query: $query + " and (orientation: " + string.to-lower-case(meta.inspect($orientation)) + ")";
+        $query: $query + " and (orientation: " + str.to-lower-case(meta.inspect($orientation)) + ")";
     }
 
     @media #{$query} {
@@ -60,6 +60,5 @@ $mediaRetina: ( 1.25: 120dpi, 1.3: 124.8dpi, 1.5: 144dpi, 2: 192dpi );
 }
 
 @mixin mediaDevice($device: Laptop, $orientation: Any, $mode: Up, $minWidth, $maxWidth) {
-
-    @include media(map.get($mediaDevices, $device));
+    @include media(map.get($devices, $device));
 }
