@@ -1,13 +1,14 @@
 @use "..//Shared//Media" as media;
 @use "sass:map" as map;
-@use "sass:string" as string;
+@use "sass:string" as str;
 @use "sass:list" as list;
 
 $prefix: "grid";
-$cols: 4;
+$baseCols: 4;
 $mediaCols: 12;
-$i: 1;
-$ii: 1;
+$iBase: 1;
+$iMedia: 1;
+
 $gaps: (
     None: null,
     SM: 6px,
@@ -16,12 +17,14 @@ $gaps: (
     XL: 22px,
     XXL: 36px
 );
+
 $justifys: (
     Start,
     End,
     Center,
     Stretch
 );
+
 $aligns: (
     Stretch,
     Start,
@@ -30,75 +33,122 @@ $aligns: (
     Baseline
 );
 
-@function styleName($rep, $mediaRep, $justify: null, $align: null, $gap: None) {
-    $result: #{$prefix}-#{$mediaRep}-#{$rep};
+@function styleName($inline: false, $justify: false, $align: false) {
+    $result: #{$prefix}-#{$iBase}-#{$iMedia};
 
-    @if ($justify !=null) {
+    @if ($justify !=false) {
         $result: #{$result}-#{$justify};
     }
 
-    @if ($align !=null) {
+    @if ($align !=false) {
         $result: #{$result}-#{$align};
     }
 
-    @if ($gap !=None) {
-        $result: #{$result}-#{$gap};
+    @if ($inline !=false) {
+        $result: #{$result}-inline;
     }
 
-    @return string.to-lower-case($result);
+    @return str.to-lower-case($result);
 }
 
-@mixin gridStyle($rep, $justify: null, $align: null, $isMedia: false) {
-    @if not ($isMedia) {
-        @each $gapName, $gap in $gaps {
-            .#{styleName($rep, $mediaCols, $justify, $align, $gapName)} {
-                display: grid;
-                grid-template-columns: repeat($rep, 1fr);
-                grid-template-rows: auto;
+@mixin style($col, $inline: false, $justify: false, $align: false) {
+    @if ($justify != false) {
+        justify-content: #{str.to-lower-case($justify)};
+    }
 
-                @if ($justify !=null) {
-                    justify-items: string.to-lower-case($justify);
-                }
+    @if ($align != false) {
+        align-items: #{str.to-lower-case($align)};
+    }
 
-                @if ($align !=null) {
-                    align-items: string.to-lower-case($align);
-                }
-
-                @if ($gapName !=None) {
-                    grid-gap: $gap;
-                }
-            }
-        }
+    @if ($inline == false) {
+        display: grid;
     }
     @else {
-        @include media.media() {
-            @each $gapName, $gap in $gaps {
-                .#{styleName($rep, $mediaCols, $justify, $align, $gapName)} {
-                    grid-template-columns: repeat($rep, 1fr);
-                }
-            }
-        }
+        display: inline-grid;
+    }
+
+    @if ($col == 1) {
+        grid-template-columns: $col;
+    }
+    @else {
+        grid-template-columns: repeat($col, 1fr);
     }
 }
 
-@while $i <=$mediaCols {
-    @include gridStyle($i);
-    @include gridStyle($ii, null, null, true);
+.#{$prefix} {
+    display: grid;
+}
 
-    @each $justify in $justifys {
-        @include gridStyle($i, $justify);
-        @include gridStyle($ii, $justify, null, true);
+.#{$prefix}-#{'inline'} {
+    display: inline-grid;
+}
+
+@while ($iMedia <= $mediaCols) {
+    .#{styleName()} {
+        @include style($iBase);
+    }
+
+    @each $just in $justifys {
+        .#{styleName(false, $just)} {
+            @include style($iBase, false, $just);
+        }
 
         @each $align in $aligns {
-            @include gridStyle($i, $justify, $align);
-            @include gridStyle($ii, $justify, $align, true);
+            .#{styleName(false, $just, $align)} {
+                @include style($iBase, false, $just, $align);
+            }   
         }
     }
 
-    $i: $i + 1;
-    $ii: $ii + 1;
+    @each $just in $justifys {
+        .#{styleName(true, $just)} {
+            @include style($iBase, false, $just);
+        }
 
-    @if ($ii > $cols) {
-        $ii: $cols;
+        @each $align in $aligns {
+            .#{styleName(true, $just, $align)} {
+                @include style($iBase, true, $just, $align);
+            }   
+        }
+    }
+
+    @include media.media() {
+        @each $just in $justifys {
+            .#{styleName(false, $just)} {
+                @include style($iMedia, false, $just);
+            }
+
+            @each $align in $aligns {
+                .#{styleName(false, $just, $align)} {
+                    @include style($iMedia, false, $just, $align);
+                }   
+            }
+        }
+
+        @each $just in $justifys {
+            .#{styleName(true, $just)} {
+                @include style($iMedia, false, $just);
+            }
+
+            @each $align in $aligns {
+                .#{styleName(true, $just, $align)} {
+                    @include style($iMedia, true, $just, $align);
+                }   
+            }
+        }
+    }
+
+    @if ($iBase < $baseCols) {
+        $iBase: $iBase + 1;
+    }
+
+    $iMedia: $iMedia + 1;
+}
+
+@each $gapName, $gap in $gaps {
+    @if ($gapName != None) {
+        .gap-#{str.to-lower-case($gapName)} {
+            grid-gap: $gap;
+        }
     }
 }
