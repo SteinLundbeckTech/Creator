@@ -51,6 +51,6 @@
   font-size: 1.3rem;
 }
 .burger-menu-wrap > .inner-menu > a:hover {
-  transform: scaleX(1.1);
+  transform: scaleX(1.4);
   color: #023d5b;
 }

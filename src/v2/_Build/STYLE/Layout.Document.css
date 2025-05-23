@@ -1,529 +1,565 @@
-html.creator-mini {
+html.creator-mn {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mini > body {
+html.creator-mn > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mini > body > .main-content {
+html.creator-mn > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mini > body > .main-content > .content-wrap {
-  padding-bottom: 2.5rem;
+html.creator-mn > body > .main-content > .content-wrap {
+  padding-bottom: 4rem;
 }
-html.creator-mini > body > .main-content > footer {
+html.creator-mn > body > .main-content > footer {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -4rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 2.5rem;
+  height: 4rem;
 }
-html.creator-mini > body > .main-content > footer.center {
+html.creator-mn > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mini > body > .main-content > footer > span.separator {
+html.creator-mn > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mini > body > .main-content > footer > div.flex {
+html.creator-mn > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mini-big {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-mn-big {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mini-big > body {
+html.creator-mn-big > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mini-big > body > .main-content {
+html.creator-mn-big > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mini-big > body > .main-content > .content-wrap {
-  padding-bottom: 3rem;
+html.creator-mn-big > body > .main-content > .content-wrap {
+  padding-bottom: 4.8rem;
 }
-html.creator-mini-big > body > .main-content > footer {
+html.creator-mn-big > body > .main-content > footer {
   position: absolute;
-  bottom: -3rem;
+  bottom: -4.8rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 3rem;
+  height: 4.8rem;
 }
-html.creator-mini-big > body > .main-content > footer.center {
+html.creator-mn-big > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mini-big > body > .main-content > footer > span.separator {
+html.creator-mn-big > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mini-big > body > .main-content > footer > div.flex {
+html.creator-mn-big > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mini-xl {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-html.creator-mini-xl > body {
-  margin: 0px;
-  padding: 0px;
-  min-height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-html.creator-mini-xl > body > .main-content {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 12px;
-}
-html.creator-mini-xl > body > .main-content > .content-wrap {
-  padding-bottom: 4.2rem;
-}
-html.creator-mini-xl > body > .main-content > footer {
-  position: absolute;
-  bottom: -4.2rem;
-  font-size: 0.7rem;
-  line-height: 1.2;
-  width: 100%;
-  height: 4.2rem;
-}
-html.creator-mini-xl > body > .main-content > footer.center {
-  text-align: center;
-}
-html.creator-mini-xl > body > .main-content > footer > span.separator {
-  font-size: 0.8rem;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-html.creator-mini-xl > body > .main-content > footer > div.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-html.creator-mini-xxl {
+html.creator-mn-xl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mini-xxl > body {
+html.creator-mn-xl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mini-xxl > body > .main-content {
+html.creator-mn-xl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mini-xxl > body > .main-content > .content-wrap {
+html.creator-mn-xl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
 }
-html.creator-mini-xxl > body > .main-content > footer {
+html.creator-mn-xl > body > .main-content > footer {
   position: absolute;
   bottom: -6rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
   height: 6rem;
 }
-html.creator-mini-xxl > body > .main-content > footer.center {
+html.creator-mn-xl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mini-xxl > body > .main-content > footer > span.separator {
+html.creator-mn-xl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mini-xxl > body > .main-content > footer > div.flex {
+html.creator-mn-xl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mediun {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-mn-xxl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mediun > body {
+html.creator-mn-xxl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mediun > body > .main-content {
+html.creator-mn-xxl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mediun > body > .main-content > .content-wrap {
-  padding-bottom: 2.5rem;
+html.creator-mn-xxl > body > .main-content > .content-wrap {
+  padding-bottom: 7.9rem;
 }
-html.creator-mediun > body > .main-content > footer {
+html.creator-mn-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -7.9rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 2.5rem;
+  height: 7.9rem;
 }
-html.creator-mediun > body > .main-content > footer.center {
+html.creator-mn-xxl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mediun > body > .main-content > footer > span.separator {
+html.creator-mn-xxl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mediun > body > .main-content > footer > div.flex {
+html.creator-mn-xxl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mediun-big {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-md {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mediun-big > body {
+html.creator-md > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mediun-big > body > .main-content {
+html.creator-md > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mediun-big > body > .main-content > .content-wrap {
-  padding-bottom: 3rem;
+html.creator-md > body > .main-content > .content-wrap {
+  padding-bottom: 4rem;
 }
-html.creator-mediun-big > body > .main-content > footer {
+html.creator-md > body > .main-content > footer {
   position: absolute;
-  bottom: -3rem;
+  bottom: -4rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
 }
-html.creator-mediun-big > body > .main-content > footer.center {
+html.creator-md > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mediun-big > body > .main-content > footer > span.separator {
+html.creator-md > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mediun-big > body > .main-content > footer > div.flex {
+html.creator-md > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mediun-xl {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-md-big {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mediun-xl > body {
+html.creator-md-big > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mediun-xl > body > .main-content {
+html.creator-md-big > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mediun-xl > body > .main-content > .content-wrap {
-  padding-bottom: 4.2rem;
+html.creator-md-big > body > .main-content > .content-wrap {
+  padding-bottom: 4.8rem;
 }
-html.creator-mediun-xl > body > .main-content > footer {
+html.creator-md-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.2rem;
+  bottom: -4.8rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 4.2rem;
+  height: 4.8rem;
 }
-html.creator-mediun-xl > body > .main-content > footer.center {
+html.creator-md-big > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mediun-xl > body > .main-content > footer > span.separator {
+html.creator-md-big > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mediun-xl > body > .main-content > footer > div.flex {
+html.creator-md-big > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-mediun-xxl {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-md-xl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mediun-xxl > body {
+html.creator-md-xl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mediun-xxl > body > .main-content {
+html.creator-md-xl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-mediun-xxl > body > .main-content > .content-wrap {
+html.creator-md-xl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
 }
-html.creator-mediun-xxl > body > .main-content > footer {
+html.creator-md-xl > body > .main-content > footer {
   position: absolute;
   bottom: -6rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
   height: 6rem;
 }
-html.creator-mediun-xxl > body > .main-content > footer.center {
+html.creator-md-xl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mediun-xxl > body > .main-content > footer > span.separator {
+html.creator-md-xl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mediun-xxl > body > .main-content > footer > div.flex {
+html.creator-md-xl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-large {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-md-xxl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-large > body {
+html.creator-md-xxl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-large > body > .main-content {
+html.creator-md-xxl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-large > body > .main-content > .content-wrap {
-  padding-bottom: 2.5rem;
+html.creator-md-xxl > body > .main-content > .content-wrap {
+  padding-bottom: 7.9rem;
 }
-html.creator-large > body > .main-content > footer {
+html.creator-md-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -7.9rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 2.5rem;
+  height: 7.9rem;
 }
-html.creator-large > body > .main-content > footer.center {
+html.creator-md-xxl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-large > body > .main-content > footer > span.separator {
+html.creator-md-xxl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-large > body > .main-content > footer > div.flex {
+html.creator-md-xxl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-large-big {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-lg {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-large-big > body {
+html.creator-lg > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-large-big > body > .main-content {
+html.creator-lg > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-large-big > body > .main-content > .content-wrap {
-  padding-bottom: 3rem;
+html.creator-lg > body > .main-content > .content-wrap {
+  padding-bottom: 4rem;
 }
-html.creator-large-big > body > .main-content > footer {
+html.creator-lg > body > .main-content > footer {
   position: absolute;
-  bottom: -3rem;
+  bottom: -4rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
 }
-html.creator-large-big > body > .main-content > footer.center {
+html.creator-lg > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-large-big > body > .main-content > footer > span.separator {
+html.creator-lg > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-large-big > body > .main-content > footer > div.flex {
+html.creator-lg > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-large-xl {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-lg-big {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-large-xl > body {
+html.creator-lg-big > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-large-xl > body > .main-content {
+html.creator-lg-big > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-large-xl > body > .main-content > .content-wrap {
-  padding-bottom: 4.2rem;
+html.creator-lg-big > body > .main-content > .content-wrap {
+  padding-bottom: 4.8rem;
 }
-html.creator-large-xl > body > .main-content > footer {
+html.creator-lg-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.2rem;
+  bottom: -4.8rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 4.2rem;
+  height: 4.8rem;
 }
-html.creator-large-xl > body > .main-content > footer.center {
+html.creator-lg-big > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-large-xl > body > .main-content > footer > span.separator {
+html.creator-lg-big > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-large-xl > body > .main-content > footer > div.flex {
+html.creator-lg-big > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-html.creator-large-xxl {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-lg-xl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-large-xxl > body {
+html.creator-lg-xl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-large-xxl > body > .main-content {
+html.creator-lg-xl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
-html.creator-large-xxl > body > .main-content > .content-wrap {
+html.creator-lg-xl > body > .main-content > .content-wrap {
   padding-bottom: 6rem;
 }
-html.creator-large-xxl > body > .main-content > footer {
+html.creator-lg-xl > body > .main-content > footer {
   position: absolute;
   bottom: -6rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
   height: 6rem;
 }
-html.creator-large-xxl > body > .main-content > footer.center {
+html.creator-lg-xl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-large-xxl > body > .main-content > footer > span.separator {
+html.creator-lg-xl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-large-xxl > body > .main-content > footer > div.flex {
+html.creator-lg-xl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html.creator-lg-xxl {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html.creator-lg-xxl > body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html.creator-lg-xxl > body > .main-content {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html.creator-lg-xxl > body > .main-content > .content-wrap {
+  padding-bottom: 7.9rem;
+}
+html.creator-lg-xxl > body > .main-content > footer {
+  position: absolute;
+  bottom: -7.9rem;
+  font-size: 0.7rem;
+  line-height: 2.7;
+  width: 100%;
+  height: 7.9rem;
+}
+html.creator-lg-xxl > body > .main-content > footer.center {
+  text-align: center;
+}
+html.creator-lg-xxl > body > .main-content > footer > span.separator {
+  font-size: 0.8rem;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+html.creator-lg-xxl > body > .main-content > footer > div.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html.creator {
@@ -543,18 +579,17 @@ html.creator > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
 html.creator > body > .main-content > .content-wrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 4rem;
 }
 html.creator > body > .main-content > footer {
   position: absolute;
-  bottom: -2.5rem;
+  bottom: -4rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 2.5rem;
+  height: 4rem;
 }
 html.creator > body > .main-content > footer.center {
   text-align: center;
@@ -568,6 +603,10 @@ html.creator > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html.creator-big {
@@ -587,18 +626,17 @@ html.creator-big > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
 html.creator-big > body > .main-content > .content-wrap {
-  padding-bottom: 3rem;
+  padding-bottom: 4.8rem;
 }
 html.creator-big > body > .main-content > footer {
   position: absolute;
-  bottom: -3rem;
+  bottom: -4.8rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 3rem;
+  height: 4.8rem;
 }
 html.creator-big > body > .main-content > footer.center {
   text-align: center;
@@ -612,6 +650,10 @@ html.creator-big > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html.creator-xl {
@@ -631,18 +673,17 @@ html.creator-xl > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
 html.creator-xl > body > .main-content > .content-wrap {
-  padding-bottom: 4.2rem;
+  padding-bottom: 6rem;
 }
 html.creator-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -4.2rem;
+  bottom: -6rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 4.2rem;
+  height: 6rem;
 }
 html.creator-xl > body > .main-content > footer.center {
   text-align: center;
@@ -656,6 +697,10 @@ html.creator-xl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html.creator-xxl {
@@ -675,18 +720,17 @@ html.creator-xxl > body > .main-content {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px;
 }
 html.creator-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 7.9rem;
 }
 html.creator-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -7.9rem;
   font-size: 0.7rem;
-  line-height: 1.2;
+  line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 7.9rem;
 }
 html.creator-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -700,6 +744,10 @@ html.creator-xxl > body > .main-content > footer > div.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .bg-cover {

@@ -1,5 +1,6 @@
-@use "..//Shared//Media" as media;
 @use "sass:string" as string;
+@use "..//Shared//Media" as media;
+@use "..//Shared//Functions" as func;
 
 $headerTags: (
     H1: 1.5rem,
@@ -11,7 +12,7 @@ $headerTags: (
 );
 
 @mixin header($head, $size, $mediaSize, $padding: null, $margin: null) {
-    $prefix: string.to-lower-case($head);
+    $prefix: func.lower($head);
 
     @if ($padding != null) {
         $prefix: $prefix + "-pad";
@@ -25,7 +26,7 @@ $headerTags: (
         $prefix: $prefix + "-r";
     }
 
-    #{string.to-lower-case($prefix)} {
+    #{func.lower($prefix)} {
         @if ($mediaSize == null) {
             font-size: $size;
         }

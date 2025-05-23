@@ -1,7 +1,8 @@
-@use "..//Shared//Media" as media;
 @use "sass:map" as map;
 @use "sass:string" as str;
 @use "sass:list" as list;
+@use "..//Shared//Media" as media;
+@use "..//Shared//Functions" as func;
 
 $prefix: "grid";
 $baseCols: 4;
@@ -48,16 +49,16 @@ $aligns: (
         $result: #{$result}-inline;
     }
 
-    @return str.to-lower-case($result);
+    @return func.lower($result);
 }
 
 @mixin style($col, $inline: false, $justify: false, $align: false) {
     @if ($justify != false) {
-        justify-content: #{str.to-lower-case($justify)};
+        justify-content: #{func.lower($justify)};
     }
 
     @if ($align != false) {
-        align-items: #{str.to-lower-case($align)};
+        align-items: #{func.lower($align)};
     }
 
     @if ($inline == false) {
@@ -147,7 +148,7 @@ $aligns: (
 
 @each $gapName, $gap in $gaps {
     @if ($gapName != None) {
-        .gap-#{str.to-lower-case($gapName)} {
+        .gap-#{func.lower($gapName)} {
             grid-gap: $gap;
         }
     }

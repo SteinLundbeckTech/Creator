@@ -1,5 +1,6 @@
 @use "sass:string" as string;
 @use "..//Shared//Media" as media;
+@use "../Shared//Functions" as func;
 
 $spaces: (
     SM: 8px,
@@ -20,11 +21,11 @@ $mrg: 4px;
 $pad: 3px;
 
 @each $name, $size in $spaces {
-    .mrg-#{string.to-lower-case($name)} {
+    .mrg-#{func.lower($name)} {
         margin: $mrg;
 
         @each $dir in $directions {
-            &-#{string.to-lower-case($dir)} {
+            &-#{func.lower($dir)} {
                 margin-#{$dir}: $mrg;
             }
         }
@@ -32,11 +33,11 @@ $pad: 3px;
 }
 
 @each $name, $size in $spaces {
-    .pad-#{string.to-lower-case($name)} {
+    .pad-#{func.lower($name)} {
         padding: $pad;
 
         @each $dir in $directions {
-            &-#{string.to-lower-case($dir)} {
+            &-#{func.lower($dir)} {
                 padding-#{$dir}: $pad;
             }
         }
@@ -45,11 +46,11 @@ $pad: 3px;
 
 @include media.media() {
     @each $name, $size in $spaces {
-        .mrg-#{string.to-lower-case($name)} {
+        .mrg-#{func.lower($name)} {
             margin: $size;
 
             @each $dir in $directions {
-                &-#{string.to-lower-case($dir)} {
+                &-#{func.lower($dir)} {
                     margin-#{$dir}: $size;
                 }
             }
@@ -57,11 +58,11 @@ $pad: 3px;
     }
 
     @each $name, $size in $spaces {
-        .pad-#{string.to-lower-case($name)} {
+        .pad-#{func.lower($name)} {
             padding: $size;
 
             @each $dir in $directions {
-                &-#{string.to-lower-case($dir)} {
+                &-#{func.lower($dir)} {
                     padding-#{$dir}: $size;
                 }
             }

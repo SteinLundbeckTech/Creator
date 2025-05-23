@@ -1,9 +1,10 @@
 @use "sass:string" as string;
 @use "sass:map" as map;
 @use "..//Shared//Colors" as colors;
+@use "..//Shared//Functions" as func;
 
 @each $name, $colors in colors.$colors {
-    $id: "btn-#{string.to-lower-case($name)}";
+    $id: "btn-#{func.lower($name)}";
 
     button.#{$id},
     input[type=button].#{$id},
@@ -36,6 +37,12 @@
     input[type=tel].#{$id},
     input[type=url].#{$id},
     input[type=search].#{$id},
+    input[type=date].#{$id},
+    input[type=datetime-local].#{$id},
+    input[type=month].#{$id},
+    input[type=range].#{$id},
+    input[type=time].#{$id},
+    input[type=week].#{$id},
     textarea.#{$id} {
         background-color: map.get($colors, Fifth);
         color: map.get($colors, Primary);
@@ -43,7 +50,6 @@
         border-radius: 3px;
         padding: 0.5rem 1rem;
         font-size: 13px;
-        ;
     }
 }
 

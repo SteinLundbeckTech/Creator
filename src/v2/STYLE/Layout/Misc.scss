@@ -1,5 +1,6 @@
 @use "sass:string" as str;
 @use "..//Shared//Media" as media;
+@use "../Shared//Functions" as func;
 
 $displays: (
     "initial",
@@ -24,7 +25,7 @@ $displays: (
         $name: "init";
     }
 
-    .show-#{str.to-lower-case($name)} {
+    .show-#{func.lower($name)} {
         display: $display;
 
         @if ($display !=none) {

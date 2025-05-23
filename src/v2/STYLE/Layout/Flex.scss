@@ -1,4 +1,5 @@
 @use "sass:string" as string;
+@use "..//Shared//Functions" as func;
 
 $justifys: (
     Center: center,
@@ -42,7 +43,7 @@ $wraps: (
         $prefix: $prefix + "-" + "reverse";
     }
 
-    $prefix: string.to-lower-case($prefix);
+    $prefix: func.lower($prefix);
 
     .#{$prefix} {
         display: flex;

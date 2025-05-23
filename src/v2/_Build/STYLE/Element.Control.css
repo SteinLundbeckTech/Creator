@@ -31,6 +31,12 @@ input[type=number].btn-funk,
 input[type=tel].btn-funk,
 input[type=url].btn-funk,
 input[type=search].btn-funk,
+input[type=date].btn-funk,
+input[type=datetime-local].btn-funk,
+input[type=month].btn-funk,
+input[type=range].btn-funk,
+input[type=time].btn-funk,
+input[type=week].btn-funk,
 textarea.btn-funk {
   background-color: #9fcef6;
   color: #165992;
@@ -73,6 +79,12 @@ input[type=number].btn-notify,
 input[type=tel].btn-notify,
 input[type=url].btn-notify,
 input[type=search].btn-notify,
+input[type=date].btn-notify,
+input[type=datetime-local].btn-notify,
+input[type=month].btn-notify,
+input[type=range].btn-notify,
+input[type=time].btn-notify,
+input[type=week].btn-notify,
 textarea.btn-notify {
   background-color: #c1cfde;
   color: #07294e;
@@ -115,6 +127,12 @@ input[type=number].btn-antan,
 input[type=tel].btn-antan,
 input[type=url].btn-antan,
 input[type=search].btn-antan,
+input[type=date].btn-antan,
+input[type=datetime-local].btn-antan,
+input[type=month].btn-antan,
+input[type=range].btn-antan,
+input[type=time].btn-antan,
+input[type=week].btn-antan,
 textarea.btn-antan {
   background-color: #e8bdb4;
   color: #fe2f00;
@@ -157,6 +175,12 @@ input[type=number].btn-warning,
 input[type=tel].btn-warning,
 input[type=url].btn-warning,
 input[type=search].btn-warning,
+input[type=date].btn-warning,
+input[type=datetime-local].btn-warning,
+input[type=month].btn-warning,
+input[type=range].btn-warning,
+input[type=time].btn-warning,
+input[type=week].btn-warning,
 textarea.btn-warning {
   background-color: #fff2cb;
   color: #ffbf00;
@@ -199,6 +223,12 @@ input[type=number].btn-danger,
 input[type=tel].btn-danger,
 input[type=url].btn-danger,
 input[type=search].btn-danger,
+input[type=date].btn-danger,
+input[type=datetime-local].btn-danger,
+input[type=month].btn-danger,
+input[type=range].btn-danger,
+input[type=time].btn-danger,
+input[type=week].btn-danger,
 textarea.btn-danger {
   background-color: #ffcacf;
   color: #8c101b;
@@ -241,6 +271,12 @@ input[type=number].btn-success,
 input[type=tel].btn-success,
 input[type=url].btn-success,
 input[type=search].btn-success,
+input[type=date].btn-success,
+input[type=datetime-local].btn-success,
+input[type=month].btn-success,
+input[type=range].btn-success,
+input[type=time].btn-success,
+input[type=week].btn-success,
 textarea.btn-success {
   background-color: #a0edbd;
   color: #195f34;
@@ -283,6 +319,12 @@ input[type=number].btn-info,
 input[type=tel].btn-info,
 input[type=url].btn-info,
 input[type=search].btn-info,
+input[type=date].btn-info,
+input[type=datetime-local].btn-info,
+input[type=month].btn-info,
+input[type=range].btn-info,
+input[type=time].btn-info,
+input[type=week].btn-info,
 textarea.btn-info {
   background-color: #c4e7ee;
   color: #2894aa;

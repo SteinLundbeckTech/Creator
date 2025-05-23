@@ -42,6 +42,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="_Build\**" />
+    <EmbeddedResource Remove="_Build\**" />
+    <None Remove="_Build\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="creator-logo.ico" />
   </ItemGroup>
 
@@ -50,10 +56,6 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="_Build\SCRIPT\" />
   </ItemGroup>
 
 </Project>
