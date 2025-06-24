@@ -2,7 +2,7 @@
 @use "sass:string" as string;
 
 $docSizes: (
-    mn: 1024px,
+    sm: 1024px,
     md: 1440px,
     lg: 1920px,
     full: 100%
@@ -10,9 +10,9 @@ $docSizes: (
 
 $footerSizes: (
     normal: 4rem,
-    big: 4.8rem,
-    xl: 6rem,
-    xxl: 7.9rem
+    big: 5.3rem,
+    xl: 6.9rem,
+    xxl: 8.8rem
 );
 
 @mixin bg($imgType: jpg, $size: cover, $imageName: null) {
@@ -96,7 +96,7 @@ $footerSizes: (
                             margin-right: $mrg;
                         }
 
-                        &>div.flex {
+                        &>div.footer-row {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -112,15 +112,91 @@ $footerSizes: (
     }
 }
 
+html.creator-center {
+    box-sizing: border-box;
+    font-size: 16px;
+
+    & > body {
+        margin: 0px;
+        padding: 0px;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        & > .main-content {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr;
+
+            & > header {
+                grid-column: 1/-1;
+                grid-row: 1/1;
+            }
+
+            & > .content-wrap {
+                grid-column: 1/-1;
+                grid-row: 2/2;
+                min-height: 100vh;
+            }
+
+            & > footer {
+                grid-row: 3/3;
+                grid-column: 1/-1;
+                font-size: 0.7rem;
+                line-height: 2.7;
+                width: 100%;
+                height: 4rem;
+                margin-top: 27px;
+
+                &.center {
+                    text-align: center;
+                }
+
+                & > span.separator {
+                    $mrg: 8px;
+
+                    font-size: 0.8rem;
+                    margin-left: $mrg;
+                    margin-right: $mrg;
+                }
+
+                & > div.footer-row {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
 @include bg(jpg, cover);
 @include bg(jpg, contain);
 @include bg(png, cover);
 @include bg(png, contain);
 
 @include media.media() {
+    html.creator-center {
+        & > body {
+            & > .main-content {
+                & > header {
+                    grid-column: 2/2;
+                }
+
+                & > .content-wrap {
+                    grid-column: 2/2;
+                }
+
+                & > footer {
+                    grid-column: 2/2;
+                }
+            }
+        }
+    }
+
     .bg-cover,
     .bg-contain {
         background-image: url("/IMAGE/main-bg.jpg");
+        background-attachment: fixed;
 
         &-png {
             background-image: url("/IMAGE/main-bg.png");

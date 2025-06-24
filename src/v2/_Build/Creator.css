@@ -397,6 +397,15 @@ input[type=text].pin {
   font-size: 22px;
   width: 10px;
   text-align: center;
+}.ul-container-center {
+  text-align: center;
+}
+.ul-container-right {
+  text-align: right;
+}
+.ul-container ul {
+  display: inline-block;
+  text-align: left;
 }.funk {
   color: #165992;
 }
@@ -444,17 +453,17 @@ input[type=text].pin {
 }
 .info-light {
   color: #68b7c7;
-}html.creator-mn {
+}html.creator-sm {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn > body {
+html.creator-sm > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn > body > .main-content {
+html.creator-sm > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -462,10 +471,10 @@ html.creator-mn > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn > body > .main-content > .content-wrap {
+html.creator-sm > body > .main-content > .content-wrap {
   padding-bottom: 4rem;
 }
-html.creator-mn > body > .main-content > footer {
+html.creator-sm > body > .main-content > footer {
   position: absolute;
   bottom: -4rem;
   font-size: 0.7rem;
@@ -473,15 +482,15 @@ html.creator-mn > body > .main-content > footer {
   width: 100%;
   height: 4rem;
 }
-html.creator-mn > body > .main-content > footer.center {
+html.creator-sm > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn > body > .main-content > footer > span.separator {
+html.creator-sm > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn > body > .main-content > footer > div.flex {
+html.creator-sm > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,17 +500,17 @@ html.creator-mn > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-big {
+html.creator-sm-big {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-big > body {
+html.creator-sm-big > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-big > body > .main-content {
+html.creator-sm-big > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -509,26 +518,26 @@ html.creator-mn-big > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+html.creator-sm-big > body > .main-content > .content-wrap {
+  padding-bottom: 5.3rem;
 }
-html.creator-mn-big > body > .main-content > footer {
+html.creator-sm-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
-html.creator-mn-big > body > .main-content > footer.center {
+html.creator-sm-big > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-big > body > .main-content > footer > span.separator {
+html.creator-sm-big > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-big > body > .main-content > footer > div.flex {
+html.creator-sm-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -538,17 +547,17 @@ html.creator-mn-big > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-xl {
+html.creator-sm-xl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-xl > body {
+html.creator-sm-xl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-xl > body > .main-content {
+html.creator-sm-xl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -556,26 +565,26 @@ html.creator-mn-xl > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+html.creator-sm-xl > body > .main-content > .content-wrap {
+  padding-bottom: 6.9rem;
 }
-html.creator-mn-xl > body > .main-content > footer {
+html.creator-sm-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
-html.creator-mn-xl > body > .main-content > footer.center {
+html.creator-sm-xl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-xl > body > .main-content > footer > span.separator {
+html.creator-sm-xl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-xl > body > .main-content > footer > div.flex {
+html.creator-sm-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -585,17 +594,17 @@ html.creator-mn-xl > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-xxl {
+html.creator-sm-xxl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-xxl > body {
+html.creator-sm-xxl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-xxl > body > .main-content {
+html.creator-sm-xxl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -603,26 +612,26 @@ html.creator-mn-xxl > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+html.creator-sm-xxl > body > .main-content > .content-wrap {
+  padding-bottom: 8.8rem;
 }
-html.creator-mn-xxl > body > .main-content > footer {
+html.creator-sm-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
-html.creator-mn-xxl > body > .main-content > footer.center {
+html.creator-sm-xxl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-xxl > body > .main-content > footer > span.separator {
+html.creator-sm-xxl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-xxl > body > .main-content > footer > div.flex {
+html.creator-sm-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,7 +678,7 @@ html.creator-md > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md > body > .main-content > footer > div.flex {
+html.creator-md > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -698,15 +707,15 @@ html.creator-md-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-md-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-md-big > body > .main-content > footer.center {
   text-align: center;
@@ -716,7 +725,7 @@ html.creator-md-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-big > body > .main-content > footer > div.flex {
+html.creator-md-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,15 +754,15 @@ html.creator-md-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-md-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-md-xl > body > .main-content > footer.center {
   text-align: center;
@@ -763,7 +772,7 @@ html.creator-md-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-xl > body > .main-content > footer > div.flex {
+html.creator-md-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,15 +801,15 @@ html.creator-md-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-md-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-md-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -810,7 +819,7 @@ html.creator-md-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-xxl > body > .main-content > footer > div.flex {
+html.creator-md-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -857,7 +866,7 @@ html.creator-lg > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg > body > .main-content > footer > div.flex {
+html.creator-lg > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -886,15 +895,15 @@ html.creator-lg-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-lg-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-lg-big > body > .main-content > footer.center {
   text-align: center;
@@ -904,7 +913,7 @@ html.creator-lg-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-big > body > .main-content > footer > div.flex {
+html.creator-lg-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,15 +942,15 @@ html.creator-lg-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-lg-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-lg-xl > body > .main-content > footer.center {
   text-align: center;
@@ -951,7 +960,7 @@ html.creator-lg-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-xl > body > .main-content > footer > div.flex {
+html.creator-lg-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -980,15 +989,15 @@ html.creator-lg-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-lg-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-lg-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -998,7 +1007,7 @@ html.creator-lg-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-xxl > body > .main-content > footer > div.flex {
+html.creator-lg-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1045,7 +1054,7 @@ html.creator > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator > body > .main-content > footer > div.flex {
+html.creator > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1074,15 +1083,15 @@ html.creator-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-big > body > .main-content > footer.center {
   text-align: center;
@@ -1092,7 +1101,7 @@ html.creator-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-big > body > .main-content > footer > div.flex {
+html.creator-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1121,15 +1130,15 @@ html.creator-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-xl > body > .main-content > footer.center {
   text-align: center;
@@ -1139,7 +1148,7 @@ html.creator-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-xl > body > .main-content > footer > div.flex {
+html.creator-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1168,15 +1177,15 @@ html.creator-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -1186,7 +1195,7 @@ html.creator-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-xxl > body > .main-content > footer > div.flex {
+html.creator-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1194,6 +1203,53 @@ html.creator-xxl > body > .main-content > footer > div.flex {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+html.creator-center {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html.creator-center > body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html.creator-center > body > .main-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+html.creator-center > body > .main-content > header {
+  grid-column: 1/-1;
+  grid-row: 1/1;
+}
+html.creator-center > body > .main-content > .content-wrap {
+  grid-column: 1/-1;
+  grid-row: 2/2;
+  min-height: 100vh;
+}
+html.creator-center > body > .main-content > footer {
+  grid-row: 3/3;
+  grid-column: 1/-1;
+  font-size: 0.7rem;
+  line-height: 2.7;
+  width: 100%;
+  height: 4rem;
+  margin-top: 27px;
+}
+html.creator-center > body > .main-content > footer.center {
+  text-align: center;
+}
+html.creator-center > body > .main-content > footer > span.separator {
+  font-size: 0.8rem;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+html.creator-center > body > .main-content > footer > div.footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-cover {
@@ -1229,9 +1285,19 @@ html.creator-xxl > body > .main-content > footer > div.flex {
 }
 
 @media (min-width: 768px) {
+  html.creator-center > body > .main-content > header {
+    grid-column: 2/2;
+  }
+  html.creator-center > body > .main-content > .content-wrap {
+    grid-column: 2/2;
+  }
+  html.creator-center > body > .main-content > footer {
+    grid-column: 2/2;
+  }
   .bg-cover,
   .bg-contain {
     background-image: url("/IMAGE/main-bg.jpg");
+    background-attachment: fixed;
   }
   .bg-cover-png,
   .bg-contain-png {
@@ -2079,6 +2145,8 @@ html.creator-xxl > body > .main-content > footer > div.flex {
   justify-content: space-evenly;
   align-items: stretch;
   flex-wrap: wrap-reverse;
+}.font-bold {
+  font-weight: bold;
 }.grid {
   display: grid;
 }
@@ -10392,6 +10460,12 @@ h6-pad-mrg-r {
   visibility: hidden;
 }
 
+.r {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 0px) {
   .show-xs-init {
     display: "initial";
@@ -11001,6 +11075,140 @@ h6-pad-mrg-r {
     display: "run-in";
     visibility: visible;
   }
+}.pad-sm {
+  padding: 5px;
+}
+.pad-sm-left {
+  padding-left: 5px;
+}
+.pad-sm-right {
+  padding-right: 5px;
+}
+.pad-sm-top {
+  padding-top: 5px;
+}
+.pad-sm-bottom {
+  padding-bottom: 5px;
+}
+
+.pad-md {
+  padding: 13px;
+}
+.pad-md-left {
+  padding-left: 13px;
+}
+.pad-md-right {
+  padding-right: 13px;
+}
+.pad-md-top {
+  padding-top: 13px;
+}
+.pad-md-bottom {
+  padding-bottom: 13px;
+}
+
+.pad-lg {
+  padding: 35px;
+}
+.pad-lg-left {
+  padding-left: 35px;
+}
+.pad-lg-right {
+  padding-right: 35px;
+}
+.pad-lg-top {
+  padding-top: 35px;
+}
+.pad-lg-bottom {
+  padding-bottom: 35px;
+}
+
+.pad-xl {
+  padding: 63px;
+}
+.pad-xl-left {
+  padding-left: 63px;
+}
+.pad-xl-right {
+  padding-right: 63px;
+}
+.pad-xl-top {
+  padding-top: 63px;
+}
+.pad-xl-bottom {
+  padding-bottom: 63px;
+}
+
+.mrg-sm {
+  margin: 4px;
+}
+.mrg-sm-left {
+  margin-left: 4px;
+}
+.mrg-sm-right {
+  margin-right: 4px;
+}
+.mrg-sm-top {
+  margin-top: 4px;
+}
+.mrg-sm-bottom {
+  margin-bottom: 4px;
+}
+
+.mrg-md {
+  margin: 9px;
+}
+.mrg-md-left {
+  margin-left: 9px;
+}
+.mrg-md-right {
+  margin-right: 9px;
+}
+.mrg-md-top {
+  margin-top: 9px;
+}
+.mrg-md-bottom {
+  margin-bottom: 9px;
+}
+
+.mrg-lg {
+  margin: 24px;
+}
+.mrg-lg-left {
+  margin-left: 24px;
+}
+.mrg-lg-right {
+  margin-right: 24px;
+}
+.mrg-lg-top {
+  margin-top: 24px;
+}
+.mrg-lg-bottom {
+  margin-bottom: 24px;
+}
+
+.mrg-xl {
+  margin: 44px;
+}
+.mrg-xl-left {
+  margin-left: 44px;
+}
+.mrg-xl-right {
+  margin-right: 44px;
+}
+.mrg-xl-top {
+  margin-top: 44px;
+}
+.mrg-xl-bottom {
+  margin-bottom: 44px;
+}
+
+.pad-clear {
+  padding: unset;
+}
+
+.mrg-clear {
+  margin: unset;
 }.align-center {
   text-align: center;
 }

@@ -1,14 +1,14 @@
-html.creator-mn {
+html.creator-sm {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn > body {
+html.creator-sm > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn > body > .main-content {
+html.creator-sm > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -16,10 +16,10 @@ html.creator-mn > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn > body > .main-content > .content-wrap {
+html.creator-sm > body > .main-content > .content-wrap {
   padding-bottom: 4rem;
 }
-html.creator-mn > body > .main-content > footer {
+html.creator-sm > body > .main-content > footer {
   position: absolute;
   bottom: -4rem;
   font-size: 0.7rem;
@@ -27,15 +27,15 @@ html.creator-mn > body > .main-content > footer {
   width: 100%;
   height: 4rem;
 }
-html.creator-mn > body > .main-content > footer.center {
+html.creator-sm > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn > body > .main-content > footer > span.separator {
+html.creator-sm > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn > body > .main-content > footer > div.flex {
+html.creator-sm > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,17 +45,17 @@ html.creator-mn > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-big {
+html.creator-sm-big {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-big > body {
+html.creator-sm-big > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-big > body > .main-content {
+html.creator-sm-big > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -63,26 +63,26 @@ html.creator-mn-big > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+html.creator-sm-big > body > .main-content > .content-wrap {
+  padding-bottom: 5.3rem;
 }
-html.creator-mn-big > body > .main-content > footer {
+html.creator-sm-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
-html.creator-mn-big > body > .main-content > footer.center {
+html.creator-sm-big > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-big > body > .main-content > footer > span.separator {
+html.creator-sm-big > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-big > body > .main-content > footer > div.flex {
+html.creator-sm-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,17 +92,17 @@ html.creator-mn-big > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-xl {
+html.creator-sm-xl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-xl > body {
+html.creator-sm-xl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-xl > body > .main-content {
+html.creator-sm-xl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -110,26 +110,26 @@ html.creator-mn-xl > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+html.creator-sm-xl > body > .main-content > .content-wrap {
+  padding-bottom: 6.9rem;
 }
-html.creator-mn-xl > body > .main-content > footer {
+html.creator-sm-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
-html.creator-mn-xl > body > .main-content > footer.center {
+html.creator-sm-xl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-xl > body > .main-content > footer > span.separator {
+html.creator-sm-xl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-xl > body > .main-content > footer > div.flex {
+html.creator-sm-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,17 +139,17 @@ html.creator-mn-xl > body > .main-content > footer > div.flex {
   box-sizing: inherit;
 }
 
-html.creator-mn-xxl {
+html.creator-sm-xxl {
   box-sizing: border-box;
   font-size: 16px;
 }
-html.creator-mn-xxl > body {
+html.creator-sm-xxl > body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html.creator-mn-xxl > body > .main-content {
+html.creator-sm-xxl > body > .main-content {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -157,26 +157,26 @@ html.creator-mn-xxl > body > .main-content {
   margin-left: auto;
   margin-right: auto;
 }
-html.creator-mn-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+html.creator-sm-xxl > body > .main-content > .content-wrap {
+  padding-bottom: 8.8rem;
 }
-html.creator-mn-xxl > body > .main-content > footer {
+html.creator-sm-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
-html.creator-mn-xxl > body > .main-content > footer.center {
+html.creator-sm-xxl > body > .main-content > footer.center {
   text-align: center;
 }
-html.creator-mn-xxl > body > .main-content > footer > span.separator {
+html.creator-sm-xxl > body > .main-content > footer > span.separator {
   font-size: 0.8rem;
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-mn-xxl > body > .main-content > footer > div.flex {
+html.creator-sm-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,7 +223,7 @@ html.creator-md > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md > body > .main-content > footer > div.flex {
+html.creator-md > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,15 +252,15 @@ html.creator-md-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-md-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-md-big > body > .main-content > footer.center {
   text-align: center;
@@ -270,7 +270,7 @@ html.creator-md-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-big > body > .main-content > footer > div.flex {
+html.creator-md-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,15 +299,15 @@ html.creator-md-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-md-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-md-xl > body > .main-content > footer.center {
   text-align: center;
@@ -317,7 +317,7 @@ html.creator-md-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-xl > body > .main-content > footer > div.flex {
+html.creator-md-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,15 +346,15 @@ html.creator-md-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-md-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-md-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-md-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -364,7 +364,7 @@ html.creator-md-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-md-xxl > body > .main-content > footer > div.flex {
+html.creator-md-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,7 +411,7 @@ html.creator-lg > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg > body > .main-content > footer > div.flex {
+html.creator-lg > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,15 +440,15 @@ html.creator-lg-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-lg-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-lg-big > body > .main-content > footer.center {
   text-align: center;
@@ -458,7 +458,7 @@ html.creator-lg-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-big > body > .main-content > footer > div.flex {
+html.creator-lg-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,15 +487,15 @@ html.creator-lg-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-lg-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-lg-xl > body > .main-content > footer.center {
   text-align: center;
@@ -505,7 +505,7 @@ html.creator-lg-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-xl > body > .main-content > footer > div.flex {
+html.creator-lg-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,15 +534,15 @@ html.creator-lg-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-lg-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-lg-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-lg-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -552,7 +552,7 @@ html.creator-lg-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-lg-xxl > body > .main-content > footer > div.flex {
+html.creator-lg-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,7 +599,7 @@ html.creator > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator > body > .main-content > footer > div.flex {
+html.creator > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,15 +628,15 @@ html.creator-big > body > .main-content {
   margin-right: auto;
 }
 html.creator-big > body > .main-content > .content-wrap {
-  padding-bottom: 4.8rem;
+  padding-bottom: 5.3rem;
 }
 html.creator-big > body > .main-content > footer {
   position: absolute;
-  bottom: -4.8rem;
+  bottom: -5.3rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 4.8rem;
+  height: 5.3rem;
 }
 html.creator-big > body > .main-content > footer.center {
   text-align: center;
@@ -646,7 +646,7 @@ html.creator-big > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-big > body > .main-content > footer > div.flex {
+html.creator-big > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -675,15 +675,15 @@ html.creator-xl > body > .main-content {
   margin-right: auto;
 }
 html.creator-xl > body > .main-content > .content-wrap {
-  padding-bottom: 6rem;
+  padding-bottom: 6.9rem;
 }
 html.creator-xl > body > .main-content > footer {
   position: absolute;
-  bottom: -6rem;
+  bottom: -6.9rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
 }
 html.creator-xl > body > .main-content > footer.center {
   text-align: center;
@@ -693,7 +693,7 @@ html.creator-xl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-xl > body > .main-content > footer > div.flex {
+html.creator-xl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,15 +722,15 @@ html.creator-xxl > body > .main-content {
   margin-right: auto;
 }
 html.creator-xxl > body > .main-content > .content-wrap {
-  padding-bottom: 7.9rem;
+  padding-bottom: 8.8rem;
 }
 html.creator-xxl > body > .main-content > footer {
   position: absolute;
-  bottom: -7.9rem;
+  bottom: -8.8rem;
   font-size: 0.7rem;
   line-height: 2.7;
   width: 100%;
-  height: 7.9rem;
+  height: 8.8rem;
 }
 html.creator-xxl > body > .main-content > footer.center {
   text-align: center;
@@ -740,7 +740,7 @@ html.creator-xxl > body > .main-content > footer > span.separator {
   margin-left: 8px;
   margin-right: 8px;
 }
-html.creator-xxl > body > .main-content > footer > div.flex {
+html.creator-xxl > body > .main-content > footer > div.footer-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -748,6 +748,53 @@ html.creator-xxl > body > .main-content > footer > div.flex {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+html.creator-center {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html.creator-center > body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html.creator-center > body > .main-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+html.creator-center > body > .main-content > header {
+  grid-column: 1/-1;
+  grid-row: 1/1;
+}
+html.creator-center > body > .main-content > .content-wrap {
+  grid-column: 1/-1;
+  grid-row: 2/2;
+  min-height: 100vh;
+}
+html.creator-center > body > .main-content > footer {
+  grid-row: 3/3;
+  grid-column: 1/-1;
+  font-size: 0.7rem;
+  line-height: 2.7;
+  width: 100%;
+  height: 4rem;
+  margin-top: 27px;
+}
+html.creator-center > body > .main-content > footer.center {
+  text-align: center;
+}
+html.creator-center > body > .main-content > footer > span.separator {
+  font-size: 0.8rem;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+html.creator-center > body > .main-content > footer > div.footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-cover {
@@ -783,9 +830,19 @@ html.creator-xxl > body > .main-content > footer > div.flex {
 }
 
 @media (min-width: 768px) {
+  html.creator-center > body > .main-content > header {
+    grid-column: 2/2;
+  }
+  html.creator-center > body > .main-content > .content-wrap {
+    grid-column: 2/2;
+  }
+  html.creator-center > body > .main-content > footer {
+    grid-column: 2/2;
+  }
   .bg-cover,
   .bg-contain {
     background-image: url("/IMAGE/main-bg.jpg");
+    background-attachment: fixed;
   }
   .bg-cover-png,
   .bg-contain-png {

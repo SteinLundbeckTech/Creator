@@ -1,0 +1,14 @@
+﻿.ul-container {
+    &-center {
+        text-align: center;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    & ul {
+        display: inline-block;
+        text-align: left;
+    }
+}

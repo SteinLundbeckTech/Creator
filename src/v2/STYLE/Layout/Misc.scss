@@ -60,6 +60,12 @@ $displays: (
     visibility: hidden;
 }
 
+.r {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 @mixin show($size, $display) {
     $name: $size;
 

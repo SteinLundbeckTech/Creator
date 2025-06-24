@@ -10,7 +10,7 @@ Style a whole website with predefined responsive styles which makes it easy to c
 
 ## Include in your website
 
-Only two line are needed to use all Crator features on your site.
+Only two line are needed to use all Creator features on your site.
 
 Include these tags:
 
