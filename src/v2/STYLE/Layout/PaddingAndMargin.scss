@@ -1,41 +1,7 @@
 ﻿@use "..//Shared//Functions" as func;
+@use "Mixins" as mix;
 
-$pads: ( SM: 5px, MD: 13px, LG: 35px, XL: 63px );
-$margins: ( SM: 4px, MD: 9px, LG: 24px, XL: 44px );
-$directions: ( Left, Right, Top, Bottom );
-
-@each $name, $value in $pads {
-    .pad {
-        &-#{func.lower($name)} {
-            padding: $value;
-        }
-
-        @each $dir in $directions {
-            &-#{func.lower($name)}-#{func.lower($dir)} {
-                #{"padding-" + func.lower($dir)}: $value;
-            }
-        }
-    }
-}
-
-@each $name, $value in $margins {
-    .mrg {
-        &-#{func.lower($name)} {
-            margin: $value;
-        }
-
-        @each $dir in $directions {
-            &-#{func.lower($name)}-#{func.lower($dir)} {
-                #{"margin-" + func.lower($dir)}: $value;
-            }
-        }
-    }
-}
-
-.pad-clear {
-    padding: unset;
-}
-
-.mrg-clear {
-    margin: unset;
-}
+@include mix.paddingAndMargins();
+@include mix.paddingAndMargins(true);
+@include mix.defaultPads();
+@include mix.miscPaddingAndMargins();

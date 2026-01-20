@@ -1,14 +1,19 @@
 ﻿.ul-container {
     &-center {
         text-align: center;
+
+        & ul {
+            display: inline-block;
+            text-align: left;
+        }
     }
 
     &-right {
         text-align: right;
-    }
 
-    & ul {
-        display: inline-block;
-        text-align: left;
+        & ul {
+            display: inline-block;
+            text-align: left;
+        }
     }
 }

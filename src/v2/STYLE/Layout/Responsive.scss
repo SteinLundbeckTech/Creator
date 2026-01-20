@@ -1,0 +1,44 @@
+@use "..//Shared//Functions" as func;
+@use "..//Shared//Media" as media;
+@use "..//Shared//Resources" as resx;
+@use "ResponsiveMixins" as mixR;
+
+[class^="show-"] {
+    @include mixR.showDisplayProperties(false);
+}
+
+.#{func.translate(Responsive)} {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.show-#{func.translate(Responsive)} {
+    @include mixR.showDisplayProperties(false);
+}
+
+@include media.media() {
+    .show-#{func.translate(Responsive)} {
+        @include mixR.showDisplayProperties();
+    }
+}
+
+@each $name, $val in media.$breakpoints {
+    @each $dis in resx.$displayPropertyValues {
+        @if not (func.equals($dis, none)) {
+            @include media.media($name) {
+                @include mixR.showR($name, $dis);
+            }
+        }
+    }
+}
+
+@each $name, $size in media.$devices {
+    @include media.media($size) {
+        @each $dis in resx.$displayPropertyValues {
+            @if not (func.equals($dis, none)) {
+                @include mixR.showR($name, $dis);
+            }
+        }
+    }
+}

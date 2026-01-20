@@ -1,0 +1,432 @@
+@use "sass:string" as string;
+@use "sass:map" as map;
+@use "sass:math" as math;
+@use "..//Shared//Media" as media;
+@use "../Shared//Functions" as func;
+
+$layoutPrefix: "layout";
+$defaultSpaceSize: 16px;
+$defaultRetractSize: 22px;
+
+@mixin defaultPads() {
+    $vals: (
+        Standard: 41px,
+        Small: 22px,
+        Medium: 41px,
+        Large: 62px,
+        xl: 98px,
+        xxl: 137px
+    );
+
+@each $name, $val in $vals {
+    $nm: #{func.translate(Padding)}-#{func.translate(Standard)};
+
+    @if not (func.equals($name, Standard)) {
+        $nm: #{$nm}-#{func.translate($name)};
+    }
+
+    .#{$nm},
+    .#{$nm}-r {
+        padding: $val;
+    }
+}
+
+@each $name, $val in $vals {
+    @include media.media() {
+        $nm: #{func.translate(Padding)}-#{func.translate(Standard)};
+
+        @if not (func.equals($name, Standard)) {
+            $nm: #{$nm}-#{func.translate($name)};
+        }
+
+        .#{$nm}-r {
+            padding: func.calcPercentage($val);
+        }
+    }
+}
+}
+
+@mixin paddingAndMargins($isResponsive: false) {
+    $spaces: (
+        Small: 4px,
+        MEdium: 16px,
+        Large: 28px,
+        XL: 41px,
+        XXL: 58px
+    );
+
+$directions: (
+    top,
+    right,
+    bottom,
+    left,
+);
+
+$spacingTypes: (
+    pad: Padding,
+    mrg: Margin
+);
+
+@each $type, $prop in $spacingTypes {
+    $prop: func.lower($prop);
+
+    @if ($isResponsive) {
+        @include media.media() {
+            .#{func.lower($type)} {
+                @each $name, $size in $spaces {
+                    &-#{func.translate($name)}-r {
+                        #{$prop}: getSpaceSize($size);
+                    }
+
+                    @each $dir in $directions {
+                        @if not (func.equals($dir, none)) {
+                            &-#{func.translate($name)}-#{$dir}-r {
+                                #{$prop}-#{func.lower($dir)}: $size;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @else {
+        .#{func.lower($type)} {
+            @each $name, $size in $spaces {
+                &-#{func.translate($name)} {
+                    #{$prop}: $size;
+
+                    @each $dir in $directions {
+                        @if (func.equals($dir, none)) {
+                            &-#{$dir},
+                            &-#{$dir}-r {
+                                #{$prop}-#{func.lower($dir)}: $size;
+                            }
+                        }
+                    }
+                }
+
+                &-#{func.translate($name)}-r {
+                    #{$prop}: $size;
+                }
+            }
+
+            @each $name, $size in $spaces {
+                &-#{func.translate($name)}-r {
+                    #{$prop}: $size;
+                }
+            }
+        }
+    }
+}
+}
+
+@mixin miscPaddingAndMargins() {
+    .#{func.translate(Padding)} {
+        padding: $defaultSpaceSize;
+
+        &-#{func.translate(Clear)} {
+            padding: 0;
+        }
+    }
+
+    .#{func.translate(Margin)} {
+        margin: $defaultSpaceSize;
+
+        &-#{func.translate(Clear)} {
+            margin: 0;
+        }
+    }
+
+    .#{func.translate(Padding)}-#{func.translate(Margin)}-#{func.translate(Clear)} {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@mixin footerRow() {
+    $vals: (
+        left: flex-start,
+        right: flex-end,
+        center: center
+    );
+
+@each $key, $value in $vals {
+    $name: "footer-row";
+
+    @if not (func.equals($key, center)) {
+        $name: #{$name}-#{$key};
+    }
+
+    footer > div.#{$name} {
+        display: flex;
+        justify-content: $value;
+        align-items: center;
+    }
+}
+}
+
+@mixin defaultFooterLayout($type: standard, $height: 4rem, $boxType: standard) {
+    footer {
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 2.7;
+        width: 100%;
+        height: $height;
+        margin-top: 27px;
+
+        @if (func.equals($type, Standard)) {
+            position: absolute;
+            bottom: #{"-" + $height};
+        }
+        @else if (func.equals($type, Box)) {
+            @if (func.equals($boxType, Standard)) {
+                grid-row: 3/3;
+                grid-column: 2/2;
+            }
+            @else if (func.equals($boxType, Full)) {
+                grid-row: 3/3;
+                grid-column: 1/-1;
+            }
+        }
+    }
+
+    @include footerRow();
+}
+
+@mixin standardLayout($variant: Standard) {
+    $width: 100%;
+    $footerSize: 4rem;
+    $name: #{$layoutPrefix}-#{func.translate($variant)};
+
+    @if (func.equals($variant, 1 Standard)) or (func.equals($variant, Box)) {
+        $width: 1440px;
+    }
+    @else if (func.equals($variant, Full)) {
+        $width: 100vw;
+    }
+    @else {
+        $width: 1366px;
+    }
+
+    html.#{$name} {
+        & > body {
+            & > .main-content {
+                width: 100%;
+
+                & > header {
+                    width: 100%;
+                }
+
+                & > .content-wrap {
+                    padding-bottom: $footerSize;
+                }
+
+                @include defaultFooterLayout(standard, $footerSize);
+            }
+        }
+    }
+
+    @include media.media() {
+        html.#{$name} {
+            & > body {
+                & > .main-content {
+                    width: $width;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    & > header {
+                        width: $width;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin boxLayout($variant: standard) {
+    $prefix: "layout-box";
+    $footerSize: 4rem;
+    $name: #{func.lower($layoutPrefix)}-box-#{func.translate($variant)};
+
+    html.#{$name} {
+        & > body {
+            & > .main-content {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 100vw;
+                grid-template-rows: auto;
+
+                & > header {
+                    @if (func.equals($variant, Standard)) {
+                        grid-column: 2;
+                        grid-row: 1;
+                    }
+                    @else if (func.equals($variant, Full)) {
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+                    @else if (func.equals($variant, Fill)) {
+                        display: none;
+                    }
+                }
+
+                & > .content-wrap {
+                    grid-row: 2;
+
+                    @if (func.equals($variant, Standard)) {
+                        grid-column: 2;
+                    }
+                    @else if (func.equals($variant, Full)) {
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+                    @else if (func.equals($variant, Fill)) {
+                        grid-column: 1;
+                        grid-row: 1;
+                    }
+                }
+
+                @include defaultFooterLayout(box, $footerSize);
+            }
+        }
+    }
+
+    @include media.media() {
+        html.#{$name} {
+            & > body {
+                & > .main-content {
+                    grid-template-columns: 10vw 80vw 10vw;
+                    grid-template-rows: auto auto auto;
+
+                    & > header {
+                        @if (func.equals($variant, Standard)) {
+                            grid-column: 2;
+                            grid-row: 1;
+                        }
+                        @else if (func.equals($variant, Full)) {
+                            grid-column: 1/-1;
+                            grid-row: 1/-1;
+                        }
+                        @else if (func.equals($variant, Fill)) {
+                            display: none;
+                        }
+                    }
+
+                    & > .content-wrap {
+                        grid-row: 2;
+
+                        @if (func.equals($variant, Standard)) {
+                            grid-column: 2;
+                        }
+                        @else if (func.equals($variant, Full)) {
+                            grid-column: 1;
+                        }
+                        @else if (func.equals($variant, Fill)) {
+                            grid-column: 1/-1;
+                            grid-row: 1/-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin commonLayoutRules() {
+    html.#{$layoutPrefix}-#{func.translate(Standard)},
+    html.#{$layoutPrefix}-full,
+    html.#{$layoutPrefix}-box-#{func.translate(Standard)},
+    html.#{$layoutPrefix}-box-full,
+    html.#{$layoutPrefix}-box-fill {
+        & > body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+
+            & > .main-content {
+                position: relative;
+            }
+        }
+    }
+
+    html.#{$layoutPrefix}-defaults {
+        font-family: 'Consola';
+        font-size: 1.7rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: ("/main-bg.jpg");
+
+        & a {
+            text-decoration: none;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @include media.media() {
+        html.#{$layoutPrefix}-defaults {
+            background-image: ("/main-bg.min.jpg");
+        }
+    }
+}
+
+@mixin brandName() {
+    .brand-name,
+    .brand-name-r,
+    .brand-name-sm,
+    .brand-name-sm-r {
+        font-family: 'FranklinGothic';
+        font-weight: bold;
+    }
+
+    .brand-name,
+    .brand-name-r {
+        font-size: 2.5rem;
+    }
+
+    .brand-name-sm,
+    .brand-name-sm-r {
+        font-size: 1.9rem;
+    }
+
+    @include media.media() {
+        .brand-name-r {
+            font-size: 1.8rem;
+        }
+
+        .brand-name-sm-r {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@mixin allLayouts() {
+    @each $type in (standard, Full) {
+        @include standardLayout($type);
+    }
+
+    @each $type in (standard, Full, Fill) {
+        @include boxLayout($type);
+    }
+}
+
+@function getSpaceSize($size, $n: $defaultRetractSize) {
+    @if (func.equals($n, none)) or (func.equals($n, 0px)) {
+        $n: $defaultRetractSize;
+    }
+
+    $size: $size - $n;
+
+    @if ($size <=0px) or ($size < $n) {
+        $size: $defaultSpaceSize;
+    }
+
+    @return $size;
+}

@@ -1,11 +1,12 @@
 ﻿@use "sass:string" as str;
+@use "sass:math" as math;
 
 @function lower($str) {
-    @return str.to-lower-case($str);
+    @return str.to-lower-case(#{$str});
 }
 
 @function upper($str) {
-    @return str.to-upper-case($str);
+    @return str.to-upper-case(#{$str});
 }
 
 @function up($nr) {
@@ -23,7 +24,7 @@
     @while $i <=str.length($str) {
         $s: str.slice($str, $i, $i);
 
-        @if ($s == '_') or ($s == "-") {
+        @if ($s =='_') or ($s =="-") {
             $i: up($i);
 
             $result: $result + upper(str.slice($str, $i, $i));
@@ -92,12 +93,57 @@
 @function toCase($str, $case: CamelCase, $firstUpper: false) {
     $result: $str;
 
-    @if (upper($case) == CAMEL) {
+    @if (upper($case)==CAMEL) {
         $result: camelCase($str, $firstUpper);
     }
-    @else if (upper($case) == TRAIN) {
+    @else if (upper($case)==TRAIN) {
         $result: trainCase($str, $firstUpper);
     }
 
     @return $result;
+}
+
+@function translate($str) {
+    @if (equals($str, Standard)) {
+        $str: "std";
+    }
+    @else if (equals($str, Small)) {
+        $str: "sm";
+    }
+    @else if (equals($str, Medium)) {
+        $str: "md";
+    }
+    @else if (equals($str, Large)) {
+        $str: "lg";
+    }
+    @else if (equals($str, Responsive)) {
+        $str: "r";
+    }
+    @else if (equals($str, Margin)) {
+        $str: "mrg";
+    }
+    @else if (equals($str, Padding)) {
+        $str: "pad";
+    }
+    @else if (equals($str, Clear)) {
+        $str: "clr";
+    }
+    @else if (equals($str, Initial)) {
+        $str: "init";
+    }
+
+    @return lower($str);
+}
+
+@function equals($str, $compare, $ignoreCase: true) {
+    @if ($ignoreCase) {
+        @return lower($str)==lower($compare);
+    }
+    @else {
+        @return $str ==$compare;
+    }
+}
+
+@function calcPercentage($nr, $percentage: 24) {
+    @return math.ceil($nr - (calc($nr / 100) * $percentage));
 }

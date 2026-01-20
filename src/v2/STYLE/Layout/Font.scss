@@ -1,3 +1,82 @@
-﻿.font-bold {
+﻿@use "..//Shared//Functions" as func;
+
+$prefix: "font";
+
+$sizes: (
+    xs: 0.4rem,
+    sm: 0.8rem,
+    md: 1.7rem,
+    lg: 3.3rem,
+    xxl: 5.7rem
+);
+
+$fonts: (
+    AcuminPro: "AcuminPro-Black.otf",
+    DejaVu: "DejaVuSansMono.ttf",
+    Carlito: "Carlito.ttf",
+    Consola: "Consola.ttf",
+    FranklinGothic: "FranklinGothic.ttf"
+);
+
+@each $name, $size in $sizes {
+    .#{func.lower($prefix)}-#{func.lower($name)} {
+        font-size: $size;
+    }
+}
+
+@each $name, $filename in $fonts {
+    .#{func.lower($prefix)}-#{func.lower($name)} {
+        font-family: '' + $name + '';
+
+        &-bold {
+            font-family: '' + $name + '';
+            font-weight: bold;
+        }
+
+        &-italic {
+            font-family: '' + $name + '';
+            font-style: italic;
+        }
+
+        &-underline {
+            font-family: '' + $name + '';
+            text-decoration: underline;
+        }
+    }
+}
+
+.#{func.lower($prefix)}-bold {
     font-weight: bold;
+}
+.#{func.lower($prefix)}-italic {
+    font-style: italic;
+}
+.#{func.lower($prefix)}-underline {
+    text-decoration: underline;
+}
+
+.#{func.lower($prefix)}-clear {
+    font-weight: normal;
+    font-size: unset;
+    text-decoration: none;
+}
+
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.align-clear {
+    text-align: unset;
+}
+
+@each $name, $filename in $fonts {
+    @font-face {
+        font-family: '' + $name + '';
+        src: url("Fonts/" + #{$filename});
+    }
 }

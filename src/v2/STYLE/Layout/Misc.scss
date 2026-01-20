@@ -1,49 +1,7 @@
 @use "sass:string" as str;
-@use "..//Shared//Media" as media;
-@use "../Shared//Functions" as func;
-
-$displays: (
-    "initial",
-    "block",
-    "inline",
-    "inline-block",
-    "flex",
-    "inline-flex",
-    "grid",
-    "inline-grid",
-    "table",
-    "inline-table",
-    "list-item",
-    "run-in",
-    "none"
-);
-
-@mixin display($display: block) {
-    $name: $display;
-
-    @if ($display ==initial) {
-        $name: "init";
-    }
-
-    .show-#{func.lower($name)} {
-        display: $display;
-
-        @if ($display !=none) {
-            visibility: visible;
-        }
-        @else {
-            visibility: hidden;
-        }
-    }
-}
-
-@each $val in $displays {
-    @if ($val !=block) {
-        @if ($val !=none) {
-            @include display($val);
-        }
-    }
-}
+@use "Mixins" as mix;
+@use "..//Shared//Resources" as resx;
+@use "..//Shared//Functions" as func;
 
 .hide {
     display: none;
@@ -55,61 +13,22 @@ $displays: (
     visibility: visible;
 }
 
-[class*="show-"] {
-    display: none;
-    visibility: hidden;
+.pointer:hover {
+    cursor: pointer;
 }
 
-.r {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
+@include mix.brandName();
 
-@mixin show($size, $display) {
-    $name: $size;
+@each $val in resx.$displayPropertyValues {
+    @if not (func.equals($val, block)) and not (func.equals($val, none)) {
+        .show-#{func.translate($val)} {
+            display: str.unquote($val);
 
-    @if ($display !=initial) {
-        $name: $name + "-" + $display;
-    }
-
-    @else if ($display ==initial) {
-        $name: $name + "-init";
-    }
-
-    .show-#{str.to-lower-case($name)} {
-        @if ($display !=none) and ($display !=block) {
-            display: $display;
-            visibility: visible;
-        }
-
-        @else if ($display !=none) and ($display ==block) {
-            display: block;
-            visibility: visible;
-        }
-
-        @else if ($display ==none) {
-            display: block;
-            visibility: visible;
-        }
-    }
-}
-
-@each $name, $val in media.$breakpoints {
-    @each $dis in $displays {
-        @if ($dis !=none) {
-            @include media.media($name) {
-                @include show($name, $dis);
+            @if not (func.equals($val, none)) {
+                visibility: visible;
             }
-        }
-    }
-}
-
-@each $name, $size in media.$devices {
-    @include media.media($size) {
-        @each $dis in $displays {
-            @if ($dis !=none) {
-                @include show($name, $dis);
+            @else {
+                visibility: hidden;
             }
         }
     }

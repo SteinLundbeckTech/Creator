@@ -1,0 +1,57 @@
+@use "..//Shared//Functions" as func;
+
+@mixin showR($size, $display) {
+    $name: func.translate($size);
+
+    @if not (func.equals($display, Initial)) {
+        $name: $name + "-" + $display;
+    }
+    @else if (func.equals($display, Initial)) {
+        $name: #{$name}-#{func.translate(Initial)};
+    }
+
+    .show-#{func.translate($name)} {
+        @if not (func.equals($display, none)) and (func.equals($display, block)) {
+            display: $display;
+            visibility: visible;
+        }
+        @else if not (func.equals($display, none)) and (func.equals($display, block)) {
+            display: block;
+            visibility: visible;
+        }
+        @else if (func.equals($display, none)) {
+            display: block;
+            visibility: visible;
+        }
+    }
+}
+
+@mixin displayProperty($display: block) {
+    $name: $display;
+
+    @if (func.equals($display, Initial)) {
+        $name: func.translate(Initial);
+    }
+
+    .show-#{func.lower($name)} {
+        display: $display;
+
+        @if not (func.equals($display, none)) {
+            visibility: visible;
+        }
+        @else {
+            visibility: hidden;
+        }
+    }
+}
+
+@mixin showDisplayProperties($visible: true) {
+    @if ($visible) {
+        display: block;
+        visibility: visible;
+    }
+    @else {
+        display: none;
+        visibility: hidden;
+    }
+}
