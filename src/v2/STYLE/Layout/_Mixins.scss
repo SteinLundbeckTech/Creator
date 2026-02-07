@@ -358,7 +358,7 @@ $spacingTypes: (
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: ("/main-bg.jpg");
+        background-image: ("/main-bg.min.jpg");
 
         & a {
             text-decoration: none;
@@ -366,13 +366,14 @@ $spacingTypes: (
 
             &:hover {
                 text-decoration: underline;
+                transform: scale(1.1);
             }
         }
     }
 
     @include media.media() {
         html.#{$layoutPrefix}-defaults {
-            background-image: ("/main-bg.min.jpg");
+            background-image: ("/main-bg.jpg");
         }
     }
 }
@@ -402,17 +403,17 @@ $spacingTypes: (
         }
 
         .brand-name-sm-r {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
     }
 }
 
 @mixin allLayouts() {
-    @each $type in (standard, Full) {
+    @each $type in (Standard, Full) {
         @include standardLayout($type);
     }
 
-    @each $type in (standard, Full, Fill) {
+    @each $type in (Standard, Full) {
         @include boxLayout($type);
     }
 }

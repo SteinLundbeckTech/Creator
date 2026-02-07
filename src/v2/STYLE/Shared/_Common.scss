@@ -1,0 +1,40 @@
+$displayPropertyValues: (
+    "initial",
+    "block",
+    "inline",
+    "inline-block",
+    "flex",
+    "inline-flex",
+    "grid",
+    "inline-grid",
+    "table",
+    "inline-table",
+    "list-item",
+    "run-in",
+    "none"
+);
+
+@mixin showDisplayProperties($visible: true) {
+    @if ($visible) {
+        display: block;
+        visibility: visible;
+    }
+    @else {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@mixin hoverScale() {
+    transform: scale(1.1);
+}
+
+@mixin link() {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        @include hoverScale();
+    }
+}

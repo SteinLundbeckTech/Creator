@@ -131,6 +131,24 @@
     @else if (equals($str, Initial)) {
         $str: "init";
     }
+    @else if (equals($str, BurgerWrap)) {
+        $str: "burger-menu-wrap";
+    }
+    @else if (equals($str, BurgerMenu)) {
+        $str: "burger-menu";
+    }
+    @else if (equals($str, BurgerIcon)) {
+        $str: "burger-menu-icon";
+    }
+    @else if (equals($str, CloseBurgerIcon)) {
+        $str: "close-menu-icon";
+    }
+    @else if (equals($str, BurgerIconSize)) {
+        $str: "icon";
+    }
+    @else if (equals($str, BurgerCloseIcon)) {
+        $str: "burger-close-icon";
+    }
 
     @return lower($str);
 }

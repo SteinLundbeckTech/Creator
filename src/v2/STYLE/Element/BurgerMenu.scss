@@ -1,60 +1,98 @@
-@mixin wrap($location: right) {
-    padding: 19px;
-    display: flex;
-    
-    @if ($location == left) {
-        justify-content: flex-start;
-    }
-    @else if ($location == right) {
-        justify-content: flex-end;
-    }
+@use "..//Shared//Functions" as func;
+@use "..//Shared//Media" as media;
+@use "..//Shared//Common" as common;
+@use "../Layout/ResponsiveMixins" as mixR;
 
-    &.burger-icon {
-        transition: all 0.3s ease-in-out;
+.#{func.translate(BurgerWrap)} {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 420;
+
+    & > .#{func.translate(BurgerIcon)} {
+        @include common.showDisplayProperties();
+
+        @each $name, $size in (Small: 27px, Medium: 39px, Large: 57px) {
+            &.icon-#{func.translate($name)} {
+                width: $size;
+                height: $size;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                left: unset;
+                bottom: unset;
+                z-index: 421;
+            }
+        }
 
         &:hover {
             cursor: pointer;
-            opacity: 0.8;
-            transform: scaleX(1.1);
+            @include common.hoverScale();
         }
+    }
+
+    & > .#{func.translate(BurgerMenu)} {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 9px;
+        border-right: 3px solid #0e0e0e;
+        @include common.showDisplayProperties();
+        z-index: 422;
+
+        & > .#{func.translate(BurgerCloseIcon)} {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            display: block;
+            border: 1px solid #a2bed8;
+            padding: 4px;
+            content: "X";
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #851111;
+            transform: rotate(90deg);
+            z-index: 423;
+
+            &:hover {
+                cursor: pointer;
+                @include common.hoverScale();
+            }
+        }
+
+        & > nav.main {
+            padding: 22px;
+            line-height: 1.7;
+        }
+    }
+
+    .#{func.translate(BurgerMenu)}-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @include common.showDisplayProperties();
+        background-color: rgba(#232629, 0.7);
+        z-index: 422;
     }
 }
 
-.burger-icon-wrap {
-    @include wrap();
-}
-.burger-icon-wrap-left {
-    @include wrap(left);
-}
+@include media.media() {
+    .#{func.translate(BurgerWrap)} {
+        .#{func.translate(BurgerIcon)} {
+            @include common.showDisplayProperties(false);
+        }
 
-.burger-menu-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(white, 0.8);
-    display: none;
-    visibility: hidden;
-    z-index: 1000;
+        & > .#{func.translate(BurgerMenu)} {
+            @include common.showDisplayProperties(false);
+        }
 
-    & > .inner-menu {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 78%;
-        background-color: #ffc1a4;
-        line-height: 1.7;
-
-        & > a {
-            color: #011d2c;
-            transition: all 0.3s ease-in-out;
-            font-size: 1.3rem;
-
-            &:hover {
-                transform: scaleX(1.4);
-                color: #023d5b;
-            }
+        .#{func.translate(BurgerMenu)}-bg {
+            @include common.showDisplayProperties(false);
         }
     }
 }

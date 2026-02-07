@@ -1,10 +1,10 @@
 @use "..//Shared//Functions" as func;
 @use "..//Shared//Media" as media;
-@use "..//Shared//Resources" as resx;
+@use "..//Shared//Common" as common;
 @use "ResponsiveMixins" as mixR;
 
 [class^="show-"] {
-    @include mixR.showDisplayProperties(false);
+    @include common.showDisplayProperties(false);
 }
 
 .#{func.translate(Responsive)} {
@@ -14,17 +14,17 @@
 }
 
 .show-#{func.translate(Responsive)} {
-    @include mixR.showDisplayProperties(false);
+    @include common.showDisplayProperties(false);
 }
 
 @include media.media() {
     .show-#{func.translate(Responsive)} {
-        @include mixR.showDisplayProperties();
+        @include common.showDisplayProperties();
     }
 }
 
 @each $name, $val in media.$breakpoints {
-    @each $dis in resx.$displayPropertyValues {
+    @each $dis in common.$displayPropertyValues {
         @if not (func.equals($dis, none)) {
             @include media.media($name) {
                 @include mixR.showR($name, $dis);
@@ -35,7 +35,7 @@
 
 @each $name, $size in media.$devices {
     @include media.media($size) {
-        @each $dis in resx.$displayPropertyValues {
+        @each $dis in common.$displayPropertyValues {
             @if not (func.equals($dis, none)) {
                 @include mixR.showR($name, $dis);
             }

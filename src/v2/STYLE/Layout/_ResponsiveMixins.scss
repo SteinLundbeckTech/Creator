@@ -44,14 +44,3 @@
         }
     }
 }
-
-@mixin showDisplayProperties($visible: true) {
-    @if ($visible) {
-        display: block;
-        visibility: visible;
-    }
-    @else {
-        display: none;
-        visibility: hidden;
-    }
-}
