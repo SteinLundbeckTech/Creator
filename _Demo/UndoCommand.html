@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Undo Command demo</title>
+
+    <link href="../src/v2/_Build/Creator.css" rel="stylesheet" />
+    <style>
+        body { font-family: Verdana, sans-serif; padding: 24px; }
+        #output { margin-top: 16px; padding: 12px; border: 1px solid #ccc; min-height: 80px; background: #f9f9f9; }
+        button { margin: 4px; padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Undo Command Demo</h2>
+    <p>
+        Use the buttons below to execute commands. Press <strong>Ctrl+Z</strong> (or Cmd+Z on Mac)
+        or click <strong>Undo</strong> to reverse the last action.
+    </p>
+
+    <button onclick="doAddItem('Apple')">Add Apple</button>
+    <button onclick="doAddItem('Banana')">Add Banana</button>
+    <button onclick="doAddItem('Cherry')">Add Cherry</button>
+    <button onclick="CreatorCommandHistory.undo()">Undo</button>
+
+    <div id="output">
+        <em>No items yet. Click a button above to add items.</em>
+    </div>
+
+    <script src="../src/v2/_Build/Creator.js"></script>
+    <script>
+        const items = [];
+
+        function renderItems() {
+            const output = document.getElementById("output");
+            output.innerHTML = items.length === 0
+                ? "<em>No items yet. Click a button above to add items.</em>"
+                : items.map(i => `<div>${i}</div>`).join("");
+        }
+
+        function doAddItem(name) {
+            const command = {
+                execute: () => { items.push(name); renderItems(); },
+                undo: () => { items.splice(items.lastIndexOf(name), 1); renderItems(); }
+            };
+            CreatorCommandHistory.execute(command);
+        }
+    </script>
+</body>
+</html>
