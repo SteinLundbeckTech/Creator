@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Creator/2.0.25": {
+        "runtime": {
+          "Creator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Creator/2.0.25": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

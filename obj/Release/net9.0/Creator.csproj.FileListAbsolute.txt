@@ -1,0 +1,12 @@
+/home/runner/work/Creator/Creator/bin/Release/net9.0/Creator.deps.json
+/home/runner/work/Creator/Creator/bin/Release/net9.0/Creator.dll
+/home/runner/work/Creator/Creator/bin/Release/net9.0/Creator.pdb
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.AssemblyInfoInputs.cache
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.AssemblyInfo.cs
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.csproj.CoreCompileInputs.cache
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.sourcelink.json
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.dll
+/home/runner/work/Creator/Creator/obj/Release/net9.0/refint/Creator.dll
+/home/runner/work/Creator/Creator/obj/Release/net9.0/Creator.pdb
+/home/runner/work/Creator/Creator/obj/Release/net9.0/ref/Creator.dll
