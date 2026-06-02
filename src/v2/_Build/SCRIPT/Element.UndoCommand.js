@@ -1,13 +1,10 @@
-const toggleBurgerMenu = () => {
-    const burgerMenuWrap = document.querySelector(".burger-menu-wrap");
-    
-    if (burgerMenuWrap.classList.contains("show")) {
-        burgerMenuWrap.classList.add("hide");
-    }
-    else if (burgerMenuWrap.classList.contains("hide") || (!burgerMenuWrap.classList.contains("hide") && !burgerMenuWrap.classList.contains("show"))) {
-        burgerMenuWrap.classList.add("show");
-    }
-}
+/*
+    @date               : 10.04.2026
+    @author             : Stein Lundbeck
+    @description        : Command history with undo support. Provides a global CreatorCommandHistory
+                          object that tracks executed commands and allows undoing the last one.
+    @latest             : 10.04.2026
+*/
 
 const CreatorCommandHistory = (() => {
     const _maxHistorySize = 100;
@@ -47,6 +44,4 @@ const CreatorCommandHistory = (() => {
     return { execute, undo, canUndo, clear, setKeyboardShortcut };
 })();
 
-	
-
-	//# sourceMappingUrl=Creator.js.map
+	//# sourceMappingUrl=Element.UndoCommand.js.map
